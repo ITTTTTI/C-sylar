@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/flysee/sylar/workspace/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -I/home/flysee/sylar/workspace/sylar/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/sylar.dir/sylar/log.cc.o -c /home/flysee/sylar/workspace/sylar/sylar/log.cc",
+  "file": "/home/flysee/sylar/workspace/sylar/sylar/log.cc"
+},
+{
+  "directory": "/home/flysee/sylar/workspace/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -I/home/flysee/sylar/workspace/sylar/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/sylar.dir/sylar/util.cc.o -c /home/flysee/sylar/workspace/sylar/sylar/util.cc",
+  "file": "/home/flysee/sylar/workspace/sylar/sylar/util.cc"
+},
+{
+  "directory": "/home/flysee/sylar/workspace/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -I/home/flysee/sylar/workspace/sylar/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/sylar.dir/sylar/config.cc.o -c /home/flysee/sylar/workspace/sylar/sylar/config.cc",
+  "file": "/home/flysee/sylar/workspace/sylar/sylar/config.cc"
+},
+{
+  "directory": "/home/flysee/sylar/workspace/sylar/build",
+  "command": "/usr/bin/g++ -I/home/flysee/sylar/workspace/sylar/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -o CMakeFiles/test.dir/tests/test.cc.o -c /home/flysee/sylar/workspace/sylar/tests/test.cc",
+  "file": "/home/flysee/sylar/workspace/sylar/tests/test.cc"
+}
+]

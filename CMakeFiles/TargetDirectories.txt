@@ -1,0 +1,4 @@
+/home/flysee/sylar/workspace/sylar/CMakeFiles/sylar.dir
+/home/flysee/sylar/workspace/sylar/CMakeFiles/test.dir
+/home/flysee/sylar/workspace/sylar/CMakeFiles/edit_cache.dir
+/home/flysee/sylar/workspace/sylar/CMakeFiles/rebuild_cache.dir

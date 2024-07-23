@@ -1,0 +1,1502 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/MinGW/bin/gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      
+      The C compiler identification is GNU, found in:
+        C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/3.28.0-msvc1/CompilerIdC/a.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      2
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.38.33133 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.38.33133.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      LINK : fatal error LNK1104: 无法打开文件“LIBCMT.lib”
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.38.33133 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      CMakeCXXCompilerId.cpp
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/3.28.0-msvc1/CompilerIdCXX/CMakeCXXCompilerId.obj
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1182 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:247 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        注意: 包含文件:  C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "注意: 包含文件:  "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-zr7oks"
+      binary: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-zr7oks"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-zr7oks'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_c5529/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_c5529.dir\\build.make CMakeFiles/cmTC_c5529.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-zr7oks'
+        Building C object CMakeFiles/cmTC_c5529.dir/CMakeCCompilerABI.c.obj
+        C:\\MinGW\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_c5529.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+        Using built-in specs.
+        COLLECT_GCC=C:\\MinGW\\bin\\gcc.exe
+        Target: mingw32
+        Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --with-gmp=/mingw --with-mpfr --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --enable-libgomp --disable-libvtv --enable-nls
+        Thread model: win32
+        gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_c5529.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
+         c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/cc1.exe -quiet -v -iprefix c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/ C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i586 -auxbase-strip CMakeFiles\\cmTC_c5529.dir\\CMakeCCompilerABI.c.obj -version -o C:\\Users\\li\\AppData\\Local\\Temp\\ccvBqb9p.s
+        GNU C11 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)
+        	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version 0.15
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include"
+        ignoring duplicate directory "/mingw/lib/gcc/mingw32/6.3.0/../../../../include"
+        ignoring duplicate directory "c:/mingw/lib/gcc/../../include"
+        ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include-fixed"
+        ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"
+        ignoring duplicate directory "/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include
+         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/../../../../include
+         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include-fixed
+         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include
+        End of search list.
+        GNU C11 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)
+        	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version 0.15
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 384cad586f05ed581a9c068b2f18b408
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_c5529.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
+         c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_c5529.dir\\CMakeCCompilerABI.c.obj C:\\Users\\li\\AppData\\Local\\Temp\\ccvBqb9p.s
+        GNU assembler version 2.28 (mingw32) using BFD version (GNU Binutils) 2.28
+        COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/
+        LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_c5529.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
+        Linking C executable cmTC_c5529.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_c5529.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_c5529.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_c5529.dir/objects.a @CMakeFiles\\cmTC_c5529.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe  -v -Wl,--whole-archive CMakeFiles\\cmTC_c5529.dir/objects.a -Wl,--no-whole-archive -o cmTC_c5529.exe -Wl,--out-implib,libcmTC_c5529.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+        Using built-in specs.
+        COLLECT_GCC=C:\\MinGW\\bin\\gcc.exe
+        COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe
+        Target: mingw32
+        Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --with-gmp=/mingw --with-mpfr --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --enable-libgomp --disable-libvtv --enable-nls
+        Thread model: win32
+        gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
+        COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/
+        LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c5529.exe' '-mtune=generic' '-march=i586'
+         c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\li\\AppData\\Local\\Temp\\ccQhmBK1.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -o cmTC_c5529.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. --whole-archive CMakeFiles\\cmTC_c5529.dir/objects.a --no-whole-archive --out-implib libcmTC_c5529.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c5529.exe' '-mtune=generic' '-march=i586'
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-zr7oks'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include]
+          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../include]
+          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include-fixed]
+          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/include]
+        end of search list found
+        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include]
+        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../include] ==> [C:/MinGW/include]
+        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include-fixed] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include-fixed]
+        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/include] ==> [C:/MinGW/mingw32/include]
+        implicit include dirs: [C:/MinGW/lib/gcc/mingw32/6.3.0/include;C:/MinGW/include;C:/MinGW/lib/gcc/mingw32/6.3.0/include-fixed;C:/MinGW/mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-zr7oks']
+        ignore line: []
+        ignore line: [Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_c5529/fast]
+        ignore line: [C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_c5529.dir\\build.make CMakeFiles/cmTC_c5529.dir/build]
+        ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-zr7oks']
+        ignore line: [Building C object CMakeFiles/cmTC_c5529.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\MinGW\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_c5529.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\MinGW\\bin\\gcc.exe]
+        ignore line: [Target: mingw32]
+        ignore line: [Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --with-gmp=/mingw --with-mpfr --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c c++ objc obj-c++ fortran ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --enable-libgomp --disable-libvtv --enable-nls]
+        ignore line: [Thread model: win32]
+        ignore line: [gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_c5529.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
+        ignore line: [ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/cc1.exe -quiet -v -iprefix c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/ C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i586 -auxbase-strip CMakeFiles\\cmTC_c5529.dir\\CMakeCCompilerABI.c.obj -version -o C:\\Users\\li\\AppData\\Local\\Temp\\ccvBqb9p.s]
+        ignore line: [GNU C11 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)]
+        ignore line: [	compiled by GNU C version 6.3.0  GMP version 6.1.2  MPFR version 3.1.5  MPC version 1.0.3  isl version 0.15]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include"]
+        ignore line: [ignoring duplicate directory "/mingw/lib/gcc/mingw32/6.3.0/../../../../include"]
+        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../include"]
+        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"]
+        ignore line: [ignoring duplicate directory "/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include]
+        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/../../../../include]
+        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include-fixed]
+        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C11 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)]
+        ignore line: [	compiled by GNU C version 6.3.0  GMP version 6.1.2  MPFR version 3.1.5  MPC version 1.0.3  isl version 0.15]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 384cad586f05ed581a9c068b2f18b408]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_c5529.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
+        ignore line: [ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_c5529.dir\\CMakeCCompilerABI.c.obj C:\\Users\\li\\AppData\\Local\\Temp\\ccvBqb9p.s]
+        ignore line: [GNU assembler version 2.28 (mingw32) using BFD version (GNU Binutils) 2.28]
+        ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/]
+        ignore line: [c:/mingw/bin/../libexec/gcc/]
+        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/]
+        ignore line: [LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/]
+        ignore line: [c:/mingw/bin/../lib/gcc/]
+        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/]
+        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_c5529.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
+        ignore line: [Linking C executable cmTC_c5529.exe]
+        ignore line: ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_c5529.dir\\link.txt --verbose=1]
+        ignore line: ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_c5529.dir/objects.a]
+        ignore line: [C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_c5529.dir/objects.a @CMakeFiles\\cmTC_c5529.dir\\objects1.rsp]
+        ignore line: [C:\\MinGW\\bin\\gcc.exe  -v -Wl --whole-archive CMakeFiles\\cmTC_c5529.dir/objects.a -Wl --no-whole-archive -o cmTC_c5529.exe -Wl --out-implib libcmTC_c5529.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\MinGW\\bin\\gcc.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe]
+        ignore line: [Target: mingw32]
+        ignore line: [Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --with-gmp=/mingw --with-mpfr --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c c++ objc obj-c++ fortran ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --enable-libgomp --disable-libvtv --enable-nls]
+        ignore line: [Thread model: win32]
+        ignore line: [gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) ]
+        ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/]
+        ignore line: [c:/mingw/bin/../libexec/gcc/]
+        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/]
+        ignore line: [LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/]
+        ignore line: [c:/mingw/bin/../lib/gcc/]
+        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/]
+        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c5529.exe' '-mtune=generic' '-march=i586']
+        link line: [ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\li\\AppData\\Local\\Temp\\ccQhmBK1.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -o cmTC_c5529.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. --whole-archive CMakeFiles\\cmTC_c5529.dir/objects.a --no-whole-archive --out-implib libcmTC_c5529.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o]
+          arg [c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll] ==> ignore
+          arg [-plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\li\\AppData\\Local\\Temp\\ccQhmBK1.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_c5529.exe] ==> ignore
+          arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o] ==> obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o]
+          arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o] ==> obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o]
+          arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0]
+          arg [-Lc:/mingw/bin/../lib/gcc] ==> dir [c:/mingw/bin/../lib/gcc]
+          arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib]
+          arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..]
+          arg [--whole-archive] ==> ignore
+          arg [CMakeFiles\\cmTC_c5529.dir/objects.a] ==> ignore
+          arg [--no-whole-archive] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_c5529.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_eh] ==> lib [gcc_eh]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_eh] ==> lib [gcc_eh]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o] ==> obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o]
+        remove lib [gcc_eh]
+        remove lib [msvcrt]
+        remove lib [gcc_eh]
+        remove lib [msvcrt]
+        collapse obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o] ==> [C:/MinGW/lib/crt2.o]
+        collapse obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/crtbegin.o]
+        collapse obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/crtend.o]
+        collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0]
+        collapse library dir [c:/mingw/bin/../lib/gcc] ==> [C:/MinGW/lib/gcc]
+        collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib] ==> [C:/MinGW/mingw32/lib]
+        collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..] ==> [C:/MinGW/lib]
+        implicit libs: [mingw32;gcc;moldname;mingwex;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex]
+        implicit objs: [C:/MinGW/lib/crt2.o;C:/MinGW/lib/gcc/mingw32/6.3.0/crtbegin.o;C:/MinGW/lib/gcc/mingw32/6.3.0/crtend.o]
+        implicit dirs: [C:/MinGW/lib/gcc/mingw32/6.3.0;C:/MinGW/lib/gcc;C:/MinGW/mingw32/lib;C:/MinGW/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-70advl"
+      binary: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-70advl"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-70advl'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_879c5/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_879c5.dir\\build.make CMakeFiles/cmTC_879c5.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-70advl'
+        Building CXX object CMakeFiles/cmTC_879c5.dir/CMakeCXXCompilerABI.cpp.obj
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_879c5.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-70advl --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_879c5.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_879c5.dir/ /FS -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+        CMakeCXXCompilerABI.cpp
+        娉ㄦ剰: 鍖呭惈鏂囦欢:  C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCompilerABI.h
+        Linking CXX executable cmTC_879c5.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_879c5.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_879c5.dir --rc=C:\\MinGW\\bin\\windres.exe --mt="" --manifests -- C:\\MinGW\\bin\\ld.exe /nologo @CMakeFiles\\cmTC_879c5.dir\\objects1.rsp  /out:cmTC_879c5.exe /implib:cmTC_879c5.lib /pdb:C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-70advl\\cmTC_879c5.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_879c5.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_879c5.dir/embed.manifest
+        RC Pass 1:
+        C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_879c5.dir/manifest.res CMakeFiles\\cmTC_879c5.dir/manifest.rc
+        RC Pass 1: command "C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_879c5.dir/manifest.res CMakeFiles\\cmTC_879c5.dir/manifest.rc" failed (exit code 1) with the following output:
+        Usage: C:\\MinGW\\bin\\windres.exe [option(s)] [input-file] [output-file]
+         The options are:
+          -i --input=<file>            Name input file
+          -o --output=<file>           Name output file
+          -J --input-format=<format>   Specify input format
+          -O --output-format=<format>  Specify output format
+          -F --target=<target>         Specify COFF target
+             --preprocessor=<program>  Program to use to preprocess rc file
+             --preprocessor-arg=<arg>  Additional preprocessor argument
+          -I --include-dir=<dir>       Include directory when preprocessing rc file
+          -D --define <sym>[=<val>]    Define SYM when preprocessing rc file
+          -U --undefine <sym>          Undefine SYM when preprocessing rc file
+          -v --verbose                 Verbose - tells you what it's doing
+          -c --codepage=<codepage>     Specify default codepage
+          -l --language=<val>          Set language when reading rc file
+             --use-temp-file           Use a temporary file instead of popen to read
+                                       the preprocessor output
+             --no-use-temp-file        Use popen (default)
+          -r                           Ignored for compatibility with rc
+          @<file>                      Read options from <file>
+          -h --help                    Print this help message
+          -V --version                 Print version information
+        FORMAT is one of rc, res, or coff, and is deduced from the file name
+        extension if not specified.  A single file name is an input file.
+        No input-file is stdin, default rc.  No output-file is stdout, default rc.
+        C:\\MinGW\\bin\\windres.exe: supported targets: pe-i386 pei-i386 elf32-i386 elf32-iamcu elf32-little elf32-big plugin srec symbolsrec verilog tekhex binary ihex
+        CMakeFiles\\cmTC_879c5.dir\\build.make:99: recipe for target 'cmTC_879c5.exe' failed
+        mingw32-make.exe[1]: *** [cmTC_879c5.exe] Error -1
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-70advl'
+        Makefile:126: recipe for target 'cmTC_879c5/fast' failed
+        mingw32-make.exe: *** [cmTC_879c5/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:49 (try_compile)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe"
+    directories:
+      source: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-zkqo67"
+      binary: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-zkqo67"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-zkqo67'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_a99ca/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_a99ca.dir\\build.make CMakeFiles/cmTC_a99ca.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-zkqo67'
+        Building CXX object CMakeFiles/cmTC_a99ca.dir/testCXXCompiler.cxx.obj
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_a99ca.dir\\testCXXCompiler.cxx.obj.d --working-dir=C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zkqo67 --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_a99ca.dir\\testCXXCompiler.cxx.obj /FdCMakeFiles\\cmTC_a99ca.dir/ /FS -c C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zkqo67\\testCXXCompiler.cxx
+        testCXXCompiler.cxx
+        Linking CXX executable cmTC_a99ca.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_a99ca.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_a99ca.dir --rc=C:\\MinGW\\bin\\windres.exe --mt="" --manifests -- C:\\MinGW\\bin\\ld.exe /nologo @CMakeFiles\\cmTC_a99ca.dir\\objects1.rsp  /out:cmTC_a99ca.exe /implib:cmTC_a99ca.lib /pdb:C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zkqo67\\cmTC_a99ca.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_a99ca.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_a99ca.dir/embed.manifest
+        RC Pass 1:
+        C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_a99ca.dir/manifest.res CMakeFiles\\cmTC_a99ca.dir/manifest.rc
+        RC Pass 1: command "C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_a99ca.dir/manifest.res CMakeFiles\\cmTC_a99ca.dir/manifest.rc" failed (exit code 1) with the following output:
+        Usage: C:\\MinGW\\bin\\windres.exe [option(s)] [input-file] [output-file]
+         The options are:
+          -i --input=<file>            Name input file
+          -o --output=<file>           Name output file
+          -J --input-format=<format>   Specify input format
+          -O --output-format=<format>  Specify output format
+          -F --target=<target>         Specify COFF target
+             --preprocessor=<program>  Program to use to preprocess rc file
+             --preprocessor-arg=<arg>  Additional preprocessor argument
+          -I --include-dir=<dir>       Include directory when preprocessing rc file
+          -D --define <sym>[=<val>]    Define SYM when preprocessing rc file
+          -U --undefine <sym>          Undefine SYM when preprocessing rc file
+          -v --verbose                 Verbose - tells you what it's doing
+          -c --codepage=<codepage>     Specify default codepage
+          -l --language=<val>          Set language when reading rc file
+             --use-temp-file           Use a temporary file instead of popen to read
+                                       the preprocessor output
+             --no-use-temp-file        Use popen (default)
+          -r                           Ignored for compatibility with rc
+          @<file>                      Read options from <file>
+          -h --help                    Print this help message
+          -V --version                 Print version information
+        FORMAT is one of rc, res, or coff, and is deduced from the file name
+        extension if not specified.  A single file name is an input file.
+        No input-file is stdin, default rc.  No output-file is stdout, default rc.
+        C:\\MinGW\\bin\\windres.exe: supported targets: pe-i386 pei-i386 elf32-i386 elf32-iamcu elf32-little elf32-big plugin srec symbolsrec verilog tekhex binary ihex
+        CMakeFiles\\cmTC_a99ca.dir\\build.make:99: recipe for target 'cmTC_a99ca.exe' failed
+        mingw32-make.exe[1]: *** [cmTC_a99ca.exe] Error -1
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-zkqo67'
+        Makefile:126: recipe for target 'cmTC_a99ca/fast' failed
+        mingw32-make.exe: *** [cmTC_a99ca/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS;/W3;/GR;/EHsc
+      Id flags:  
+      
+      The output was:
+      2
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.38.33133 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.38.33133.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      LINK : fatal error LNK1104: 无法打开文件“LIBCMT.lib”
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS;/W3;/GR;/EHsc
+      Id flags: -c 
+      
+      The output was:
+      0
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.38.33133 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      CMakeCXXCompilerId.cpp
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/3.28.0-msvc1/CompilerIdCXX/CMakeCXXCompilerId.obj
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1182 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:247 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        注意: 包含文件:  C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "注意: 包含文件:  "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-wzqt1o"
+      binary: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-wzqt1o"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-wzqt1o'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_8af2f/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_8af2f.dir\\build.make CMakeFiles/cmTC_8af2f.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-wzqt1o'
+        Building CXX object CMakeFiles/cmTC_8af2f.dir/CMakeCXXCompilerABI.cpp.obj
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_8af2f.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wzqt1o --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_8af2f.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_8af2f.dir/ /FS -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+        CMakeCXXCompilerABI.cpp
+        娉ㄦ剰: 鍖呭惈鏂囦欢:  C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCompilerABI.h
+        Linking CXX executable cmTC_8af2f.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_8af2f.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_8af2f.dir --rc=C:\\MinGW\\bin\\windres.exe --mt="" --manifests -- C:\\MinGW\\bin\\ld.exe /nologo @CMakeFiles\\cmTC_8af2f.dir\\objects1.rsp  /out:cmTC_8af2f.exe /implib:cmTC_8af2f.lib /pdb:C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wzqt1o\\cmTC_8af2f.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_8af2f.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_8af2f.dir/embed.manifest
+        RC Pass 1:
+        C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_8af2f.dir/manifest.res CMakeFiles\\cmTC_8af2f.dir/manifest.rc
+        RC Pass 1: command "C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_8af2f.dir/manifest.res CMakeFiles\\cmTC_8af2f.dir/manifest.rc" failed (exit code 1) with the following output:
+        Usage: C:\\MinGW\\bin\\windres.exe [option(s)] [input-file] [output-file]
+         The options are:
+          -i --input=<file>            Name input file
+          -o --output=<file>           Name output file
+          -J --input-format=<format>   Specify input format
+          -O --output-format=<format>  Specify output format
+          -F --target=<target>         Specify COFF target
+             --preprocessor=<program>  Program to use to preprocess rc file
+             --preprocessor-arg=<arg>  Additional preprocessor argument
+          -I --include-dir=<dir>       Include directory when preprocessing rc file
+          -D --define <sym>[=<val>]    Define SYM when preprocessing rc file
+          -U --undefine <sym>          Undefine SYM when preprocessing rc file
+          -v --verbose                 Verbose - tells you what it's doing
+          -c --codepage=<codepage>     Specify default codepage
+          -l --language=<val>          Set language when reading rc file
+             --use-temp-file           Use a temporary file instead of popen to read
+                                       the preprocessor output
+             --no-use-temp-file        Use popen (default)
+          -r                           Ignored for compatibility with rc
+          @<file>                      Read options from <file>
+          -h --help                    Print this help message
+          -V --version                 Print version information
+        FORMAT is one of rc, res, or coff, and is deduced from the file name
+        extension if not specified.  A single file name is an input file.
+        No input-file is stdin, default rc.  No output-file is stdout, default rc.
+        C:\\MinGW\\bin\\windres.exe: supported targets: pe-i386 pei-i386 elf32-i386 elf32-iamcu elf32-little elf32-big plugin srec symbolsrec verilog tekhex binary ihex
+        CMakeFiles\\cmTC_8af2f.dir\\build.make:99: recipe for target 'cmTC_8af2f.exe' failed
+        mingw32-make.exe[1]: *** [cmTC_8af2f.exe] Error -1
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-wzqt1o'
+        Makefile:126: recipe for target 'cmTC_8af2f/fast' failed
+        mingw32-make.exe: *** [cmTC_8af2f/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:49 (try_compile)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe"
+    directories:
+      source: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-0vyyo6"
+      binary: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-0vyyo6"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-0vyyo6'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_f612d/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_f612d.dir\\build.make CMakeFiles/cmTC_f612d.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-0vyyo6'
+        Building CXX object CMakeFiles/cmTC_f612d.dir/testCXXCompiler.cxx.obj
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_f612d.dir\\testCXXCompiler.cxx.obj.d --working-dir=C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0vyyo6 --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_f612d.dir\\testCXXCompiler.cxx.obj /FdCMakeFiles\\cmTC_f612d.dir/ /FS -c C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0vyyo6\\testCXXCompiler.cxx
+        testCXXCompiler.cxx
+        Linking CXX executable cmTC_f612d.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_f612d.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_f612d.dir --rc=C:\\MinGW\\bin\\windres.exe --mt="" --manifests -- C:\\MinGW\\bin\\ld.exe /nologo @CMakeFiles\\cmTC_f612d.dir\\objects1.rsp  /out:cmTC_f612d.exe /implib:cmTC_f612d.lib /pdb:C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0vyyo6\\cmTC_f612d.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_f612d.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_f612d.dir/embed.manifest
+        RC Pass 1:
+        C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_f612d.dir/manifest.res CMakeFiles\\cmTC_f612d.dir/manifest.rc
+        RC Pass 1: command "C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_f612d.dir/manifest.res CMakeFiles\\cmTC_f612d.dir/manifest.rc" failed (exit code 1) with the following output:
+        Usage: C:\\MinGW\\bin\\windres.exe [option(s)] [input-file] [output-file]
+         The options are:
+          -i --input=<file>            Name input file
+          -o --output=<file>           Name output file
+          -J --input-format=<format>   Specify input format
+          -O --output-format=<format>  Specify output format
+          -F --target=<target>         Specify COFF target
+             --preprocessor=<program>  Program to use to preprocess rc file
+             --preprocessor-arg=<arg>  Additional preprocessor argument
+          -I --include-dir=<dir>       Include directory when preprocessing rc file
+          -D --define <sym>[=<val>]    Define SYM when preprocessing rc file
+          -U --undefine <sym>          Undefine SYM when preprocessing rc file
+          -v --verbose                 Verbose - tells you what it's doing
+          -c --codepage=<codepage>     Specify default codepage
+          -l --language=<val>          Set language when reading rc file
+             --use-temp-file           Use a temporary file instead of popen to read
+                                       the preprocessor output
+             --no-use-temp-file        Use popen (default)
+          -r                           Ignored for compatibility with rc
+          @<file>                      Read options from <file>
+          -h --help                    Print this help message
+          -V --version                 Print version information
+        FORMAT is one of rc, res, or coff, and is deduced from the file name
+        extension if not specified.  A single file name is an input file.
+        No input-file is stdin, default rc.  No output-file is stdout, default rc.
+        C:\\MinGW\\bin\\windres.exe: supported targets: pe-i386 pei-i386 elf32-i386 elf32-iamcu elf32-little elf32-big plugin srec symbolsrec verilog tekhex binary ihex
+        CMakeFiles\\cmTC_f612d.dir\\build.make:99: recipe for target 'cmTC_f612d.exe' failed
+        mingw32-make.exe[1]: *** [cmTC_f612d.exe] Error -1
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-0vyyo6'
+        Makefile:126: recipe for target 'cmTC_f612d/fast' failed
+        mingw32-make.exe: *** [cmTC_f612d/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS;/W3;/GR;/EHsc
+      Id flags:  
+      
+      The output was:
+      2
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.38.33133 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.38.33133.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      LINK : fatal error LNK1104: 无法打开文件“LIBCMT.lib”
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS;/W3;/GR;/EHsc
+      Id flags: -c 
+      
+      The output was:
+      0
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.38.33133 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      CMakeCXXCompilerId.cpp
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/3.28.0-msvc1/CompilerIdCXX/CMakeCXXCompilerId.obj
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1182 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:247 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        注意: 包含文件:  C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "注意: 包含文件:  "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-a259tb"
+      binary: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-a259tb"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-a259tb'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_afb65/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_afb65.dir\\build.make CMakeFiles/cmTC_afb65.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-a259tb'
+        Building CXX object CMakeFiles/cmTC_afb65.dir/CMakeCXXCompilerABI.cpp.obj
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_afb65.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a259tb --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_afb65.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_afb65.dir/ /FS -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+        CMakeCXXCompilerABI.cpp
+        娉ㄦ剰: 鍖呭惈鏂囦欢:  C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCompilerABI.h
+        Linking CXX executable cmTC_afb65.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_afb65.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_afb65.dir --rc=C:\\MinGW\\bin\\windres.exe --mt="" --manifests -- C:\\MinGW\\bin\\ld.exe /nologo @CMakeFiles\\cmTC_afb65.dir\\objects1.rsp  /out:cmTC_afb65.exe /implib:cmTC_afb65.lib /pdb:C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a259tb\\cmTC_afb65.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_afb65.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_afb65.dir/embed.manifest
+        RC Pass 1:
+        C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_afb65.dir/manifest.res CMakeFiles\\cmTC_afb65.dir/manifest.rc
+        RC Pass 1: command "C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_afb65.dir/manifest.res CMakeFiles\\cmTC_afb65.dir/manifest.rc" failed (exit code 1) with the following output:
+        Usage: C:\\MinGW\\bin\\windres.exe [option(s)] [input-file] [output-file]
+         The options are:
+          -i --input=<file>            Name input file
+          -o --output=<file>           Name output file
+          -J --input-format=<format>   Specify input format
+          -O --output-format=<format>  Specify output format
+          -F --target=<target>         Specify COFF target
+             --preprocessor=<program>  Program to use to preprocess rc file
+             --preprocessor-arg=<arg>  Additional preprocessor argument
+          -I --include-dir=<dir>       Include directory when preprocessing rc file
+          -D --define <sym>[=<val>]    Define SYM when preprocessing rc file
+          -U --undefine <sym>          Undefine SYM when preprocessing rc file
+          -v --verbose                 Verbose - tells you what it's doing
+          -c --codepage=<codepage>     Specify default codepage
+          -l --language=<val>          Set language when reading rc file
+             --use-temp-file           Use a temporary file instead of popen to read
+                                       the preprocessor output
+             --no-use-temp-file        Use popen (default)
+          -r                           Ignored for compatibility with rc
+          @<file>                      Read options from <file>
+          -h --help                    Print this help message
+          -V --version                 Print version information
+        FORMAT is one of rc, res, or coff, and is deduced from the file name
+        extension if not specified.  A single file name is an input file.
+        No input-file is stdin, default rc.  No output-file is stdout, default rc.
+        C:\\MinGW\\bin\\windres.exe: supported targets: pe-i386 pei-i386 elf32-i386 elf32-iamcu elf32-little elf32-big plugin srec symbolsrec verilog tekhex binary ihex
+        CMakeFiles\\cmTC_afb65.dir\\build.make:99: recipe for target 'cmTC_afb65.exe' failed
+        mingw32-make.exe[1]: *** [cmTC_afb65.exe] Error -1
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-a259tb'
+        Makefile:126: recipe for target 'cmTC_afb65/fast' failed
+        mingw32-make.exe: *** [cmTC_afb65/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:49 (try_compile)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe"
+    directories:
+      source: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-0av1hm"
+      binary: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-0av1hm"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-0av1hm'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_82f6d/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_82f6d.dir\\build.make CMakeFiles/cmTC_82f6d.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-0av1hm'
+        Building CXX object CMakeFiles/cmTC_82f6d.dir/testCXXCompiler.cxx.obj
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_82f6d.dir\\testCXXCompiler.cxx.obj.d --working-dir=C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0av1hm --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_82f6d.dir\\testCXXCompiler.cxx.obj /FdCMakeFiles\\cmTC_82f6d.dir/ /FS -c C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0av1hm\\testCXXCompiler.cxx
+        testCXXCompiler.cxx
+        Linking CXX executable cmTC_82f6d.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_82f6d.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_82f6d.dir --rc=C:\\MinGW\\bin\\windres.exe --mt="" --manifests -- C:\\MinGW\\bin\\ld.exe /nologo @CMakeFiles\\cmTC_82f6d.dir\\objects1.rsp  /out:cmTC_82f6d.exe /implib:cmTC_82f6d.lib /pdb:C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0av1hm\\cmTC_82f6d.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_82f6d.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_82f6d.dir/embed.manifest
+        RC Pass 1:
+        C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_82f6d.dir/manifest.res CMakeFiles\\cmTC_82f6d.dir/manifest.rc
+        RC Pass 1: command "C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_82f6d.dir/manifest.res CMakeFiles\\cmTC_82f6d.dir/manifest.rc" failed (exit code 1) with the following output:
+        Usage: C:\\MinGW\\bin\\windres.exe [option(s)] [input-file] [output-file]
+         The options are:
+          -i --input=<file>            Name input file
+          -o --output=<file>           Name output file
+          -J --input-format=<format>   Specify input format
+          -O --output-format=<format>  Specify output format
+          -F --target=<target>         Specify COFF target
+             --preprocessor=<program>  Program to use to preprocess rc file
+             --preprocessor-arg=<arg>  Additional preprocessor argument
+          -I --include-dir=<dir>       Include directory when preprocessing rc file
+          -D --define <sym>[=<val>]    Define SYM when preprocessing rc file
+          -U --undefine <sym>          Undefine SYM when preprocessing rc file
+          -v --verbose                 Verbose - tells you what it's doing
+          -c --codepage=<codepage>     Specify default codepage
+          -l --language=<val>          Set language when reading rc file
+             --use-temp-file           Use a temporary file instead of popen to read
+                                       the preprocessor output
+             --no-use-temp-file        Use popen (default)
+          -r                           Ignored for compatibility with rc
+          @<file>                      Read options from <file>
+          -h --help                    Print this help message
+          -V --version                 Print version information
+        FORMAT is one of rc, res, or coff, and is deduced from the file name
+        extension if not specified.  A single file name is an input file.
+        No input-file is stdin, default rc.  No output-file is stdout, default rc.
+        C:\\MinGW\\bin\\windres.exe: supported targets: pe-i386 pei-i386 elf32-i386 elf32-iamcu elf32-little elf32-big plugin srec symbolsrec verilog tekhex binary ihex
+        CMakeFiles\\cmTC_82f6d.dir\\build.make:99: recipe for target 'cmTC_82f6d.exe' failed
+        mingw32-make.exe[1]: *** [cmTC_82f6d.exe] Error -1
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-0av1hm'
+        Makefile:126: recipe for target 'cmTC_82f6d/fast' failed
+        mingw32-make.exe: *** [cmTC_82f6d/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS;/W3;/GR;/EHsc
+      Id flags:  
+      
+      The output was:
+      2
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.38.33133 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.38.33133.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      LINK : fatal error LNK1104: 无法打开文件“LIBCMT.lib”
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS;/W3;/GR;/EHsc
+      Id flags: -c 
+      
+      The output was:
+      0
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.38.33133 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      CMakeCXXCompilerId.cpp
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/3.28.0-msvc1/CompilerIdCXX/CMakeCXXCompilerId.obj
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1182 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:247 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        注意: 包含文件:  C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "注意: 包含文件:  "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-e12xwr"
+      binary: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-e12xwr"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-e12xwr'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_d57c0/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_d57c0.dir\\build.make CMakeFiles/cmTC_d57c0.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-e12xwr'
+        Building CXX object CMakeFiles/cmTC_d57c0.dir/CMakeCXXCompilerABI.cpp.obj
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_d57c0.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e12xwr --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_d57c0.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_d57c0.dir/ /FS -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+        CMakeCXXCompilerABI.cpp
+        娉ㄦ剰: 鍖呭惈鏂囦欢:  C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCompilerABI.h
+        Linking CXX executable cmTC_d57c0.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_d57c0.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_d57c0.dir --rc=C:\\MinGW\\bin\\windres.exe --mt="" --manifests -- C:\\MinGW\\bin\\ld.exe /nologo @CMakeFiles\\cmTC_d57c0.dir\\objects1.rsp  /out:cmTC_d57c0.exe /implib:cmTC_d57c0.lib /pdb:C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e12xwr\\cmTC_d57c0.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_d57c0.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_d57c0.dir/embed.manifest
+        RC Pass 1:
+        C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_d57c0.dir/manifest.res CMakeFiles\\cmTC_d57c0.dir/manifest.rc
+        RC Pass 1: command "C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_d57c0.dir/manifest.res CMakeFiles\\cmTC_d57c0.dir/manifest.rc" failed (exit code 1) with the following output:
+        Usage: C:\\MinGW\\bin\\windres.exe [option(s)] [input-file] [output-file]
+         The options are:
+          -i --input=<file>            Name input file
+          -o --output=<file>           Name output file
+          -J --input-format=<format>   Specify input format
+          -O --output-format=<format>  Specify output format
+          -F --target=<target>         Specify COFF target
+             --preprocessor=<program>  Program to use to preprocess rc file
+             --preprocessor-arg=<arg>  Additional preprocessor argument
+          -I --include-dir=<dir>       Include directory when preprocessing rc file
+          -D --define <sym>[=<val>]    Define SYM when preprocessing rc file
+          -U --undefine <sym>          Undefine SYM when preprocessing rc file
+          -v --verbose                 Verbose - tells you what it's doing
+          -c --codepage=<codepage>     Specify default codepage
+          -l --language=<val>          Set language when reading rc file
+             --use-temp-file           Use a temporary file instead of popen to read
+                                       the preprocessor output
+             --no-use-temp-file        Use popen (default)
+          -r                           Ignored for compatibility with rc
+          @<file>                      Read options from <file>
+          -h --help                    Print this help message
+          -V --version                 Print version information
+        FORMAT is one of rc, res, or coff, and is deduced from the file name
+        extension if not specified.  A single file name is an input file.
+        No input-file is stdin, default rc.  No output-file is stdout, default rc.
+        C:\\MinGW\\bin\\windres.exe: supported targets: pe-i386 pei-i386 elf32-i386 elf32-iamcu elf32-little elf32-big plugin srec symbolsrec verilog tekhex binary ihex
+        CMakeFiles\\cmTC_d57c0.dir\\build.make:99: recipe for target 'cmTC_d57c0.exe' failed
+        mingw32-make.exe[1]: *** [cmTC_d57c0.exe] Error -1
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-e12xwr'
+        Makefile:126: recipe for target 'cmTC_d57c0/fast' failed
+        mingw32-make.exe: *** [cmTC_d57c0/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:49 (try_compile)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe"
+    directories:
+      source: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-lohy0v"
+      binary: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-lohy0v"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-lohy0v'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_4ea1e/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_4ea1e.dir\\build.make CMakeFiles/cmTC_4ea1e.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-lohy0v'
+        Building CXX object CMakeFiles/cmTC_4ea1e.dir/testCXXCompiler.cxx.obj
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_4ea1e.dir\\testCXXCompiler.cxx.obj.d --working-dir=C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lohy0v --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_4ea1e.dir\\testCXXCompiler.cxx.obj /FdCMakeFiles\\cmTC_4ea1e.dir/ /FS -c C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lohy0v\\testCXXCompiler.cxx
+        testCXXCompiler.cxx
+        Linking CXX executable cmTC_4ea1e.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_4ea1e.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_4ea1e.dir --rc=C:\\MinGW\\bin\\windres.exe --mt="" --manifests -- C:\\MinGW\\bin\\ld.exe /nologo @CMakeFiles\\cmTC_4ea1e.dir\\objects1.rsp  /out:cmTC_4ea1e.exe /implib:cmTC_4ea1e.lib /pdb:C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lohy0v\\cmTC_4ea1e.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_4ea1e.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_4ea1e.dir/embed.manifest
+        RC Pass 1:
+        C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_4ea1e.dir/manifest.res CMakeFiles\\cmTC_4ea1e.dir/manifest.rc
+        RC Pass 1: command "C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_4ea1e.dir/manifest.res CMakeFiles\\cmTC_4ea1e.dir/manifest.rc" failed (exit code 1) with the following output:
+        Usage: C:\\MinGW\\bin\\windres.exe [option(s)] [input-file] [output-file]
+         The options are:
+          -i --input=<file>            Name input file
+          -o --output=<file>           Name output file
+          -J --input-format=<format>   Specify input format
+          -O --output-format=<format>  Specify output format
+          -F --target=<target>         Specify COFF target
+             --preprocessor=<program>  Program to use to preprocess rc file
+             --preprocessor-arg=<arg>  Additional preprocessor argument
+          -I --include-dir=<dir>       Include directory when preprocessing rc file
+          -D --define <sym>[=<val>]    Define SYM when preprocessing rc file
+          -U --undefine <sym>          Undefine SYM when preprocessing rc file
+          -v --verbose                 Verbose - tells you what it's doing
+          -c --codepage=<codepage>     Specify default codepage
+          -l --language=<val>          Set language when reading rc file
+             --use-temp-file           Use a temporary file instead of popen to read
+                                       the preprocessor output
+             --no-use-temp-file        Use popen (default)
+          -r                           Ignored for compatibility with rc
+          @<file>                      Read options from <file>
+          -h --help                    Print this help message
+          -V --version                 Print version information
+        FORMAT is one of rc, res, or coff, and is deduced from the file name
+        extension if not specified.  A single file name is an input file.
+        No input-file is stdin, default rc.  No output-file is stdout, default rc.
+        C:\\MinGW\\bin\\windres.exe: supported targets: pe-i386 pei-i386 elf32-i386 elf32-iamcu elf32-little elf32-big plugin srec symbolsrec verilog tekhex binary ihex
+        CMakeFiles\\cmTC_4ea1e.dir\\build.make:99: recipe for target 'cmTC_4ea1e.exe' failed
+        mingw32-make.exe[1]: *** [cmTC_4ea1e.exe] Error -1
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-lohy0v'
+        Makefile:126: recipe for target 'cmTC_4ea1e/fast' failed
+        mingw32-make.exe: *** [cmTC_4ea1e/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS;/W3;/GR;/EHsc
+      Id flags:  
+      
+      The output was:
+      2
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.38.33133 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.38.33133.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      LINK : fatal error LNK1104: 无法打开文件“LIBCMT.lib”
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS;/W3;/GR;/EHsc
+      Id flags: -c 
+      
+      The output was:
+      0
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.38.33133 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      CMakeCXXCompilerId.cpp
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/3.28.0-msvc1/CompilerIdCXX/CMakeCXXCompilerId.obj
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1182 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:247 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        注意: 包含文件:  C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "注意: 包含文件:  "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-nwf1p5"
+      binary: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-nwf1p5"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-nwf1p5'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_efbbd/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_efbbd.dir\\build.make CMakeFiles/cmTC_efbbd.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-nwf1p5'
+        Building CXX object CMakeFiles/cmTC_efbbd.dir/CMakeCXXCompilerABI.cpp.obj
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_efbbd.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nwf1p5 --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_efbbd.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_efbbd.dir/ /FS -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+        CMakeCXXCompilerABI.cpp
+        娉ㄦ剰: 鍖呭惈鏂囦欢:  C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCompilerABI.h
+        Linking CXX executable cmTC_efbbd.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_efbbd.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_efbbd.dir --rc=C:\\MinGW\\bin\\windres.exe --mt="" --manifests -- C:\\MinGW\\bin\\ld.exe /nologo @CMakeFiles\\cmTC_efbbd.dir\\objects1.rsp  /out:cmTC_efbbd.exe /implib:cmTC_efbbd.lib /pdb:C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nwf1p5\\cmTC_efbbd.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_efbbd.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_efbbd.dir/embed.manifest
+        RC Pass 1:
+        C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_efbbd.dir/manifest.res CMakeFiles\\cmTC_efbbd.dir/manifest.rc
+        RC Pass 1: command "C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_efbbd.dir/manifest.res CMakeFiles\\cmTC_efbbd.dir/manifest.rc" failed (exit code 1) with the following output:
+        Usage: C:\\MinGW\\bin\\windres.exe [option(s)] [input-file] [output-file]
+         The options are:
+          -i --input=<file>            Name input file
+          -o --output=<file>           Name output file
+          -J --input-format=<format>   Specify input format
+          -O --output-format=<format>  Specify output format
+          -F --target=<target>         Specify COFF target
+             --preprocessor=<program>  Program to use to preprocess rc file
+             --preprocessor-arg=<arg>  Additional preprocessor argument
+          -I --include-dir=<dir>       Include directory when preprocessing rc file
+          -D --define <sym>[=<val>]    Define SYM when preprocessing rc file
+          -U --undefine <sym>          Undefine SYM when preprocessing rc file
+          -v --verbose                 Verbose - tells you what it's doing
+          -c --codepage=<codepage>     Specify default codepage
+          -l --language=<val>          Set language when reading rc file
+             --use-temp-file           Use a temporary file instead of popen to read
+                                       the preprocessor output
+             --no-use-temp-file        Use popen (default)
+          -r                           Ignored for compatibility with rc
+          @<file>                      Read options from <file>
+          -h --help                    Print this help message
+          -V --version                 Print version information
+        FORMAT is one of rc, res, or coff, and is deduced from the file name
+        extension if not specified.  A single file name is an input file.
+        No input-file is stdin, default rc.  No output-file is stdout, default rc.
+        C:\\MinGW\\bin\\windres.exe: supported targets: pe-i386 pei-i386 elf32-i386 elf32-iamcu elf32-little elf32-big plugin srec symbolsrec verilog tekhex binary ihex
+        CMakeFiles\\cmTC_efbbd.dir\\build.make:99: recipe for target 'cmTC_efbbd.exe' failed
+        mingw32-make.exe[1]: *** [cmTC_efbbd.exe] Error -1
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-nwf1p5'
+        Makefile:126: recipe for target 'cmTC_efbbd/fast' failed
+        mingw32-make.exe: *** [cmTC_efbbd/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:49 (try_compile)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe"
+    directories:
+      source: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-wgzm73"
+      binary: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-wgzm73"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-wgzm73'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_c8ab3/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_c8ab3.dir\\build.make CMakeFiles/cmTC_c8ab3.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-wgzm73'
+        Building CXX object CMakeFiles/cmTC_c8ab3.dir/testCXXCompiler.cxx.obj
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_c8ab3.dir\\testCXXCompiler.cxx.obj.d --working-dir=C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wgzm73 --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_c8ab3.dir\\testCXXCompiler.cxx.obj /FdCMakeFiles\\cmTC_c8ab3.dir/ /FS -c C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wgzm73\\testCXXCompiler.cxx
+        testCXXCompiler.cxx
+        Linking CXX executable cmTC_c8ab3.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_c8ab3.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c8ab3.dir --rc=C:\\MinGW\\bin\\windres.exe --mt="" --manifests -- C:\\MinGW\\bin\\ld.exe /nologo @CMakeFiles\\cmTC_c8ab3.dir\\objects1.rsp  /out:cmTC_c8ab3.exe /implib:cmTC_c8ab3.lib /pdb:C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wgzm73\\cmTC_c8ab3.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_c8ab3.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_c8ab3.dir/embed.manifest
+        RC Pass 1:
+        C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_c8ab3.dir/manifest.res CMakeFiles\\cmTC_c8ab3.dir/manifest.rc
+        RC Pass 1: command "C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_c8ab3.dir/manifest.res CMakeFiles\\cmTC_c8ab3.dir/manifest.rc" failed (exit code 1) with the following output:
+        Usage: C:\\MinGW\\bin\\windres.exe [option(s)] [input-file] [output-file]
+         The options are:
+          -i --input=<file>            Name input file
+          -o --output=<file>           Name output file
+          -J --input-format=<format>   Specify input format
+          -O --output-format=<format>  Specify output format
+          -F --target=<target>         Specify COFF target
+             --preprocessor=<program>  Program to use to preprocess rc file
+             --preprocessor-arg=<arg>  Additional preprocessor argument
+          -I --include-dir=<dir>       Include directory when preprocessing rc file
+          -D --define <sym>[=<val>]    Define SYM when preprocessing rc file
+          -U --undefine <sym>          Undefine SYM when preprocessing rc file
+          -v --verbose                 Verbose - tells you what it's doing
+          -c --codepage=<codepage>     Specify default codepage
+          -l --language=<val>          Set language when reading rc file
+             --use-temp-file           Use a temporary file instead of popen to read
+                                       the preprocessor output
+             --no-use-temp-file        Use popen (default)
+          -r                           Ignored for compatibility with rc
+          @<file>                      Read options from <file>
+          -h --help                    Print this help message
+          -V --version                 Print version information
+        FORMAT is one of rc, res, or coff, and is deduced from the file name
+        extension if not specified.  A single file name is an input file.
+        No input-file is stdin, default rc.  No output-file is stdout, default rc.
+        C:\\MinGW\\bin\\windres.exe: supported targets: pe-i386 pei-i386 elf32-i386 elf32-iamcu elf32-little elf32-big plugin srec symbolsrec verilog tekhex binary ihex
+        CMakeFiles\\cmTC_c8ab3.dir\\build.make:99: recipe for target 'cmTC_c8ab3.exe' failed
+        mingw32-make.exe[1]: *** [cmTC_c8ab3.exe] Error -1
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-wgzm73'
+        Makefile:126: recipe for target 'cmTC_c8ab3/fast' failed
+        mingw32-make.exe: *** [cmTC_c8ab3/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS;/W3;/GR;/EHsc
+      Id flags:  
+      
+      The output was:
+      2
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.38.33133 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.38.33133.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      LINK : fatal error LNK1104: 无法打开文件“LIBCMT.lib”
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS;/W3;/GR;/EHsc
+      Id flags: -c 
+      
+      The output was:
+      0
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.38.33133 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      CMakeCXXCompilerId.cpp
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/3.28.0-msvc1/CompilerIdCXX/CMakeCXXCompilerId.obj
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1182 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:247 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        注意: 包含文件:  C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "注意: 包含文件:  "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-e0gtye"
+      binary: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-e0gtye"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-e0gtye'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_a81a7/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_a81a7.dir\\build.make CMakeFiles/cmTC_a81a7.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-e0gtye'
+        Building CXX object CMakeFiles/cmTC_a81a7.dir/CMakeCXXCompilerABI.cpp.obj
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_a81a7.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e0gtye --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_a81a7.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_a81a7.dir/ /FS -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+        CMakeCXXCompilerABI.cpp
+        娉ㄦ剰: 鍖呭惈鏂囦欢:  C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCompilerABI.h
+        Linking CXX executable cmTC_a81a7.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_a81a7.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_a81a7.dir --rc=C:\\MinGW\\bin\\windres.exe --mt="" --manifests -- C:\\MinGW\\bin\\ld.exe /nologo @CMakeFiles\\cmTC_a81a7.dir\\objects1.rsp  /out:cmTC_a81a7.exe /implib:cmTC_a81a7.lib /pdb:C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e0gtye\\cmTC_a81a7.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_a81a7.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_a81a7.dir/embed.manifest
+        RC Pass 1:
+        C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_a81a7.dir/manifest.res CMakeFiles\\cmTC_a81a7.dir/manifest.rc
+        RC Pass 1: command "C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_a81a7.dir/manifest.res CMakeFiles\\cmTC_a81a7.dir/manifest.rc" failed (exit code 1) with the following output:
+        Usage: C:\\MinGW\\bin\\windres.exe [option(s)] [input-file] [output-file]
+         The options are:
+          -i --input=<file>            Name input file
+          -o --output=<file>           Name output file
+          -J --input-format=<format>   Specify input format
+          -O --output-format=<format>  Specify output format
+          -F --target=<target>         Specify COFF target
+             --preprocessor=<program>  Program to use to preprocess rc file
+             --preprocessor-arg=<arg>  Additional preprocessor argument
+          -I --include-dir=<dir>       Include directory when preprocessing rc file
+          -D --define <sym>[=<val>]    Define SYM when preprocessing rc file
+          -U --undefine <sym>          Undefine SYM when preprocessing rc file
+          -v --verbose                 Verbose - tells you what it's doing
+          -c --codepage=<codepage>     Specify default codepage
+          -l --language=<val>          Set language when reading rc file
+             --use-temp-file           Use a temporary file instead of popen to read
+                                       the preprocessor output
+             --no-use-temp-file        Use popen (default)
+          -r                           Ignored for compatibility with rc
+          @<file>                      Read options from <file>
+          -h --help                    Print this help message
+          -V --version                 Print version information
+        FORMAT is one of rc, res, or coff, and is deduced from the file name
+        extension if not specified.  A single file name is an input file.
+        No input-file is stdin, default rc.  No output-file is stdout, default rc.
+        C:\\MinGW\\bin\\windres.exe: supported targets: pe-i386 pei-i386 elf32-i386 elf32-iamcu elf32-little elf32-big plugin srec symbolsrec verilog tekhex binary ihex
+        CMakeFiles\\cmTC_a81a7.dir\\build.make:99: recipe for target 'cmTC_a81a7.exe' failed
+        mingw32-make.exe[1]: *** [cmTC_a81a7.exe] Error -1
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-e0gtye'
+        Makefile:126: recipe for target 'cmTC_a81a7/fast' failed
+        mingw32-make.exe: *** [cmTC_a81a7/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:49 (try_compile)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe"
+    directories:
+      source: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-55b1f1"
+      binary: "C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-55b1f1"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-55b1f1'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_c3133/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_c3133.dir\\build.make CMakeFiles/cmTC_c3133.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-55b1f1'
+        Building CXX object CMakeFiles/cmTC_c3133.dir/testCXXCompiler.cxx.obj
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_c3133.dir\\testCXXCompiler.cxx.obj.d --working-dir=C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-55b1f1 --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1438~1.331\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_c3133.dir\\testCXXCompiler.cxx.obj /FdCMakeFiles\\cmTC_c3133.dir/ /FS -c C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-55b1f1\\testCXXCompiler.cxx
+        testCXXCompiler.cxx
+        Linking CXX executable cmTC_c3133.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_c3133.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c3133.dir --rc=C:\\MinGW\\bin\\windres.exe --mt="" --manifests -- C:\\MinGW\\bin\\ld.exe /nologo @CMakeFiles\\cmTC_c3133.dir\\objects1.rsp  /out:cmTC_c3133.exe /implib:cmTC_c3133.lib /pdb:C:\\Users\\li\\Desktop\\sylar_linux\\sylar\\workspace\\sylar\\build\\CMakeFiles\\CMakeScratch\\TryCompile-55b1f1\\cmTC_c3133.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_c3133.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_c3133.dir/embed.manifest
+        RC Pass 1:
+        C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_c3133.dir/manifest.res CMakeFiles\\cmTC_c3133.dir/manifest.rc
+        RC Pass 1: command "C:\\MinGW\\bin\\windres.exe /fo CMakeFiles\\cmTC_c3133.dir/manifest.res CMakeFiles\\cmTC_c3133.dir/manifest.rc" failed (exit code 1) with the following output:
+        Usage: C:\\MinGW\\bin\\windres.exe [option(s)] [input-file] [output-file]
+         The options are:
+          -i --input=<file>            Name input file
+          -o --output=<file>           Name output file
+          -J --input-format=<format>   Specify input format
+          -O --output-format=<format>  Specify output format
+          -F --target=<target>         Specify COFF target
+             --preprocessor=<program>  Program to use to preprocess rc file
+             --preprocessor-arg=<arg>  Additional preprocessor argument
+          -I --include-dir=<dir>       Include directory when preprocessing rc file
+          -D --define <sym>[=<val>]    Define SYM when preprocessing rc file
+          -U --undefine <sym>          Undefine SYM when preprocessing rc file
+          -v --verbose                 Verbose - tells you what it's doing
+          -c --codepage=<codepage>     Specify default codepage
+          -l --language=<val>          Set language when reading rc file
+             --use-temp-file           Use a temporary file instead of popen to read
+                                       the preprocessor output
+             --no-use-temp-file        Use popen (default)
+          -r                           Ignored for compatibility with rc
+          @<file>                      Read options from <file>
+          -h --help                    Print this help message
+          -V --version                 Print version information
+        FORMAT is one of rc, res, or coff, and is deduced from the file name
+        extension if not specified.  A single file name is an input file.
+        No input-file is stdin, default rc.  No output-file is stdout, default rc.
+        C:\\MinGW\\bin\\windres.exe: supported targets: pe-i386 pei-i386 elf32-i386 elf32-iamcu elf32-little elf32-big plugin srec symbolsrec verilog tekhex binary ihex
+        CMakeFiles\\cmTC_c3133.dir\\build.make:99: recipe for target 'cmTC_c3133.exe' failed
+        mingw32-make.exe[1]: *** [cmTC_c3133.exe] Error -1
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/li/Desktop/sylar_linux/sylar/workspace/sylar/build/CMakeFiles/CMakeScratch/TryCompile-55b1f1'
+        Makefile:126: recipe for target 'cmTC_c3133/fast' failed
+        mingw32-make.exe: *** [cmTC_c3133/fast] Error 2
+        
+      exitCode: 2
+...
