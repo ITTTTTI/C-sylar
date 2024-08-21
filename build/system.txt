@@ -1,0 +1,4 @@
+2024-08-12 23:48:03	[INFO]	hello world
+
+2024-08-12 23:48:03	[INFO]	hello system
+

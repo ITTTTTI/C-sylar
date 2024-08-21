@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
-  "/home/flysee/sylar/workspace/sylar/lib/libsylar.pdb"
-  "/home/flysee/sylar/workspace/sylar/lib/libsylar.so"
+  "/home/niufx/C-sylar/lib/libsylar.pdb"
+  "/home/niufx/C-sylar/lib/libsylar.so"
+  "CMakeFiles/sylar.dir/sylar/config.cc.o"
+  "CMakeFiles/sylar.dir/sylar/config.cc.o.d"
   "CMakeFiles/sylar.dir/sylar/log.cc.o"
   "CMakeFiles/sylar.dir/sylar/log.cc.o.d"
+  "CMakeFiles/sylar.dir/sylar/thread.cc.o"
+  "CMakeFiles/sylar.dir/sylar/thread.cc.o.d"
   "CMakeFiles/sylar.dir/sylar/util.cc.o"
   "CMakeFiles/sylar.dir/sylar/util.cc.o.d"
 )

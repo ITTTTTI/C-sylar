@@ -13,6 +13,7 @@
 #include "util.h"
 #include <cstdarg>
 #include "singleton.h"
+#include "thread.h"
 
 
 #define SYLAR_LOG_LEVEL(logger,level)\
@@ -38,13 +39,15 @@
 
 #define SYLAR_LOG_ROOT() sylar::LoggerMgr::GetInstance()->getRoot()
 
+#define SYLAR_LOG_NAME(name) sylar::LoggerMgr::GetInstance()->getLogger(name)
+
 namespace sylar
 {
 class Logger;
 class LoggerManager;
  // namespace name
 
- class LogLevel {
+class LogLevel {
 public:
 
     enum Level {
@@ -62,6 +65,7 @@ public:
     };
 
     static const char* ToString(LogLevel::Level level);
+    static LogLevel::Level FromString(const std::string& str);
 
 };
 
@@ -130,6 +134,10 @@ public:
         virtual void format(std::ostream& os, std::shared_ptr<Logger> logger, LogLevel::Level Level,LogEvent::ptr event) = 0;
     };
     void init();
+
+    bool isError() const {return m_error;}
+
+    const std::string getPattern() const{return m_pattern;}
 private:
      std::string m_pattern;
      std::vector<FormatItem::ptr> m_items;
@@ -138,28 +146,34 @@ private:
 
 
 class LogAppender {
+friend class Logger;
 public:
     typedef std::shared_ptr<LogAppender> ptr;
+    typedef Spinlock MutexType;
     virtual ~LogAppender() {}
 
     virtual void log(std::shared_ptr<Logger> logger, LogLevel::Level level, LogEvent::ptr event) = 0;
+    virtual std::string toYamlString()=0;
 
-    void setFormatter(LogFormatter::ptr val){m_formatter = val;}
-    LogFormatter::ptr getFormatter() const { return m_formatter;}
+    void setFormatter(LogFormatter::ptr val);
+    LogFormatter::ptr getFormatter();
     LogLevel::Level getLevel() const { return m_level;}
     void setLevel(LogLevel::Level val) { m_level = val;}
 protected:
     /// 日志级别
     LogLevel::Level m_level=LogLevel::DEBUG;
+    bool m_hasFormatter = false;
+    MutexType m_mutex;
     LogFormatter::ptr m_formatter;
 };
 
 
 
-class Logger : public std::enable_shared_from_this<Logger> {
+class Logger : public std::enable_shared_from_this<Logger> {//std::enable_shared_from_this是一个模板类，设计用于与std::shared_ptr一起使用，以解决一个常见问题：从类的成员函数内部安全地生成指向该类实例的std::shared_ptr。
+friend class LoggerManager;
 public:
     typedef std::shared_ptr<Logger> ptr;
-
+    typedef Spinlock MutexType;
     Logger(const std::string& name = "root");
     void log(LogLevel::Level level, LogEvent::ptr event);
 
@@ -171,24 +185,35 @@ public:
 
     void addAppender(LogAppender::ptr appender);
     void delAppender(LogAppender::ptr appender);
+    void clearAppenders();
     LogLevel::Level getLevel() const { return m_level;}
     void setLevel(LogLevel::Level val) { m_level = val;}
 
     const std::string& getName() const { return m_name;}
+
+    void setFormatter(LogFormatter::ptr val);
+    void setFormatter(const std::string& val);
+
+    LogFormatter::ptr getFormatter();
+
+    std::string toYamlString();
 
 private:
     /// 日志名称
     std::string m_name;
     /// 日志级别
     LogLevel::Level m_level;
+    MutexType m_mutex;
     std::list<LogAppender::ptr> m_appenders;
     LogFormatter::ptr m_formatter;
+    Logger::ptr m_root;
 };
 
 class StdoutLogAppender : public LogAppender {
 public:
     typedef std::shared_ptr<StdoutLogAppender> ptr;
     void log(std::shared_ptr<Logger> logger, LogLevel::Level level, LogEvent::ptr event) override ;
+    std::string toYamlString() override;
 };
 
 
@@ -197,7 +222,7 @@ public:
     typedef std::shared_ptr<FileLogAppender> ptr;
     FileLogAppender(const std::string& filename);
     void log(std::shared_ptr<Logger> logger, LogLevel::Level level, LogEvent::ptr event) override;
-    
+    std::string toYamlString() override;
     //重新打开文件，文件打开成功返回True
     bool reopen();
 
@@ -207,19 +232,26 @@ private:
     /// 文件流
     std::ofstream m_filestream;
     /// 上次重新打开时间
+    uint64_t m_lastTime= 0;
 
 };
 
 class LoggerManager{
     public:
+    typedef Spinlock  MutexType;
     LoggerManager();
     Logger::ptr getLogger(const std::string& name);
 
     void init();
+    
     Logger::ptr getRoot() const { return m_root;}
+
+    std::string toYamlString();
     private:
+    MutexType m_mutex;
     std::map<std::string,Logger::ptr> m_loggers;
     Logger::ptr m_root;
+
 };
 
 typedef sylar::Singleton<LoggerManager> LoggerMgr;
