@@ -3,6 +3,7 @@
 #include <yaml-cpp/yaml.h>
 #include <iostream>
 
+
 sylar::ConfigVar<int>::ptr g_int_value_config =
     sylar::Config::Lookup("system.port",(int)8080,"system port");
 
@@ -133,5 +134,8 @@ int main(int argc, char** argv){
 
     //test_yaml();
     test_log();
+     sylar::Config::Visit([](sylar::ConfigVarBase::ptr var){SYLAR_LOG_INFO(SYLAR_LOG_ROOT())<<"name="<<var->getName()<<"description="<<var->getDescription()
+    <<"value="<<var->toString();
+    });
     return 0;
 }

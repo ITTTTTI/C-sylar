@@ -1,0 +1,23 @@
+2024-08-21 23:31:47	name=system.int_usetdescription=system int usetvalue=- 2
+- 1
+2024-08-21 23:31:47	name=system.int_setdescription=system int setvalue=- 1
+- 2
+2024-08-21 23:31:47	name=system.int_listdescription=system int listvalue=- 1
+- 2
+2024-08-21 23:31:47	name=system.valuedescription=system valuevalue=10.1999998
+2024-08-21 23:31:47	name=system.portdescription=system portvalue=8080
+2024-08-21 23:31:47	name=logsdescription=logs configvalue=- name: root
+  level: INFO
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: root.txt
+    - type: StdoutLogAppender
+- name: system
+  level: DEBUG
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: system.txt
+      formatter: "%d%T[%p]%T%m%n"
+    - type: StdoutLogAppender

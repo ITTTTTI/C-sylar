@@ -40,9 +40,9 @@ int main(int argc, char** argv){
     std::vector<sylar::Thread::ptr> thrs;
     for (int i=0;i<3;i++){
         sylar::Thread::ptr thr(new sylar::Thread(&fun1,"name_"+std::to_string(i*2)));
-        sylar::Thread::ptr thr2(new sylar::Thread(&fun3,"name_"+std::to_string(i*2+1)));
+        //sylar::Thread::ptr thr2(new sylar::Thread(&fun3,"name_"+std::to_string(i*2+1)));
         thrs.push_back(thr);
-        thrs.push_back(thr2);
+        //thrs.push_back(thr2);
     }
     
     for (size_t i=0;i<thrs.size();i++){
@@ -50,5 +50,6 @@ int main(int argc, char** argv){
     }
     SYLAR_LOG_INFO(g_logger)<<"thread test end";
     SYLAR_LOG_INFO(g_logger)<<"count="<<count;
+   
     return 0;
 }

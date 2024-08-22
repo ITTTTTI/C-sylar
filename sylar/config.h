@@ -288,7 +288,7 @@ class ConfigVar : public ConfigVarBase{
               // 始终返回 true，表示函数执行成功
               return true;
        }
-        const T getValue() const{
+        const T getValue() {
             RWMutexType::ReadLock Lock(m_mutex);
             return m_val;
             }
