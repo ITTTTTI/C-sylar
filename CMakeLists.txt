@@ -60,6 +60,11 @@ force_redefine_file_macro_for_sources(test_thread)
 add_dependencies(test_thread sylar)  #指定 test 可执行文件依赖于 sylar 库。确保在构建 test 之前先构建 sylar 库。
 target_link_libraries(test_thread ${LIB_LIB})
 
+add_executable(test_util tests/test_util.cc)  #创建一个名为 test 的可执行文件，源文件是 tests/test.cc
+force_redefine_file_macro_for_sources(test_util)
+add_dependencies(test_util sylar)  #指定 test 可执行文件依赖于 sylar 库。确保在构建 test 之前先构建 sylar 库。
+target_link_libraries(test_util ${LIB_LIB})
+
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin) #可执行文件的输出路径
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)  #设置库文件的输出路径
 # 添加其他库或依赖项，例如：

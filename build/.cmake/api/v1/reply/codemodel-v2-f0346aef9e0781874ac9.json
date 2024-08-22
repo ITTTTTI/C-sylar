@@ -18,7 +18,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -36,7 +37,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -68,6 +70,13 @@
 					"id" : "test_thread::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-test_thread-Debug-e4e24ca3822fb7eae45a.json",
 					"name" : "test_thread",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_util::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_util-Debug-4fca126af99567ddda7a.json",
+					"name" : "test_util",
 					"projectIndex" : 0
 				}
 			]
