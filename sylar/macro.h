@@ -2,6 +2,24 @@
 #define __SYLAR_MACRO_H__
 
 #include <string.h>
-#include
+#include <assert.h>
+#include "util.h"
+#include "log.h"
+
+#define SYLAR_ASSERT(x) \
+   if(!(x)){ \
+     SYLAR_LOG_ERROR(SYLAR_LOG_ROOT())<<"ASSERTION:" #x \
+         <<"\nbcaktrace:\n" \
+         <<sylar::BacktraceToString(10);\
+         assert(x);\
+  }
+
+#define SYLAR_ASSERT2(x,w)\
+   if(!(x)){\
+       SYLAR_LOG_ERROR(SYLAR_LOG_ROOT())<<"ASSERTION:" #x \
+         <<"\nbcaktrace:\n" \
+         <<sylar::BacktraceToString(10);\
+         assert(x);\
+   }
 
 #endif
