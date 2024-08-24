@@ -9,13 +9,14 @@ namespace sylar
 {
 class Fiber : public std::enable_shared_from_this<Fiber>{
 public:
-    std::shared_ptr<Fiber> ptr;
+    typedef std::shared_ptr<Fiber> ptr;
     enum State{
         INIT, //初始化状态
         HOLD, //处于等待或暂停状态
         EXEC, //Fiber 对象正在执行
         TERM, //对象已终止或结束执行
-        READY //Fiber 对象已准备好执行，但尚未开始
+        READY, 
+        EXCEPT //Fiber 对象已准备好执行，但尚未开始
     };
 private:
     Fiber();//禁用默认构造函数
@@ -28,7 +29,12 @@ public:
     void swapIn();
     //切换到后台执行
     void swapOut();
+
+    uint64_t getId() const {return m_id;}
 public:
+    //设置当前协程对象
+    static void SetThis(Fiber* f);
+    //获取当前协程对象指针
     static Fiber::ptr GetThis();
     //协程切换到后台，状态ready
     static void YieldToReady();
@@ -37,17 +43,18 @@ public:
     //总协程数
     static uint64_t TotalFibers();
 
-    static int MainFunc();
+    static void MainFunc();
+    static uint64_t GetFiberId();
 
 private:
-    uint64_t m_id=0;
-    uint32_t m_stacksize =0;
-    State m_state = INIT;
+    uint32_t m_stacksize =0;//协程栈大小
+    State m_state = INIT; //协程状态
+    uint64_t m_id=0; //协程id
 
-    ucontext_t m_ctx;
-    void* m_stack =nullptr;
+    ucontext_t m_ctx; //协程上下文
+    void* m_stack =nullptr; //协程栈
 
-    std::function<void()> m_cb;
+    std::function<void()> m_cb; //协程函数
 
 };
 } 

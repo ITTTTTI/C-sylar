@@ -3,6 +3,8 @@
 #include <string>
 #include "log.h"
 
+#include "fiber.h"
+
 
 namespace sylar
 {
@@ -11,7 +13,7 @@ pid_t GetThreadId() {
     return syscall(SYS_gettid);
 }
 uint32_t GetFiberId() {
-    return 0;
+    return sylar::Fiber::GetFiberId();
 }
 void Backtrace(std::vector<std::string>& bt , int size, int skip){
     void** array =(void**) malloc(sizeof(void*)*size);

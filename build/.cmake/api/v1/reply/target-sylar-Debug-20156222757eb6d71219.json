@@ -29,7 +29,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 43,
+				"line" : 44,
 				"parent" : 0
 			},
 			{
@@ -47,8 +47,14 @@
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 44,
+				"line" : 45,
 				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 12,
+				"parent" : 4
 			},
 			{
 				"command" : 3,
@@ -119,7 +125,7 @@
 			[
 				{
 					"backtrace" : 6,
-					"define" : "__FILE__=\"sylar/util.cc\""
+					"define" : "__FILE__=\"sylar/fiber.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -149,7 +155,7 @@
 			[
 				{
 					"backtrace" : 7,
-					"define" : "__FILE__=\"sylar/config.cc\""
+					"define" : "__FILE__=\"sylar/util.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -179,7 +185,7 @@
 			[
 				{
 					"backtrace" : 8,
-					"define" : "__FILE__=\"sylar/thread.cc\""
+					"define" : "__FILE__=\"sylar/config.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -196,6 +202,36 @@
 			"sourceIndexes" : 
 			[
 				3
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 9,
+					"define" : "__FILE__=\"sylar/thread.cc\""
+				},
+				{
+					"define" : "sylar_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/home/niufx/C-sylar/."
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				4
 			]
 		}
 	],
@@ -232,7 +268,8 @@
 				0,
 				1,
 				2,
-				3
+				3,
+				4
 			]
 		}
 	],
@@ -247,18 +284,24 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 1,
-			"path" : "sylar/util.cc",
+			"path" : "sylar/fiber.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 2,
-			"path" : "sylar/config.cc",
+			"path" : "sylar/util.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 3,
+			"path" : "sylar/config.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 4,
 			"path" : "sylar/thread.cc",
 			"sourceGroupIndex" : 0
 		}

@@ -7,6 +7,12 @@
 },
 {
   "directory": "/home/niufx/C-sylar/build",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/fiber.cc\\\" -I/home/niufx/C-sylar/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/sylar.dir/sylar/fiber.cc.o -c /home/niufx/C-sylar/sylar/fiber.cc",
+  "file": "/home/niufx/C-sylar/sylar/fiber.cc",
+  "output": "CMakeFiles/sylar.dir/sylar/fiber.cc.o"
+},
+{
+  "directory": "/home/niufx/C-sylar/build",
   "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/util.cc\\\" -I/home/niufx/C-sylar/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/sylar.dir/sylar/util.cc.o -c /home/niufx/C-sylar/sylar/util.cc",
   "file": "/home/niufx/C-sylar/sylar/util.cc",
   "output": "CMakeFiles/sylar.dir/sylar/util.cc.o"
@@ -46,5 +52,11 @@
   "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test_util.cc\\\" -I/home/niufx/C-sylar/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -o CMakeFiles/test_util.dir/tests/test_util.cc.o -c /home/niufx/C-sylar/tests/test_util.cc",
   "file": "/home/niufx/C-sylar/tests/test_util.cc",
   "output": "CMakeFiles/test_util.dir/tests/test_util.cc.o"
+},
+{
+  "directory": "/home/niufx/C-sylar/build",
+  "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test_fiber.cc\\\" -I/home/niufx/C-sylar/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -o CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o -c /home/niufx/C-sylar/tests/test_fiber.cc",
+  "file": "/home/niufx/C-sylar/tests/test_fiber.cc",
+  "output": "CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o"
 }
 ]

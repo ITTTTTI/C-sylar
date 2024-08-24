@@ -83,10 +83,24 @@ CMakeFiles/sylar.dir/sylar/log.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sylar.dir/sylar/log.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"sylar/log.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/niufx/C-sylar/sylar/log.cc -o CMakeFiles/sylar.dir/sylar/log.cc.s
 
+CMakeFiles/sylar.dir/sylar/fiber.cc.o: CMakeFiles/sylar.dir/flags.make
+CMakeFiles/sylar.dir/sylar/fiber.cc.o: /home/niufx/C-sylar/sylar/fiber.cc
+CMakeFiles/sylar.dir/sylar/fiber.cc.o: CMakeFiles/sylar.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/niufx/C-sylar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sylar.dir/sylar/fiber.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"sylar/fiber.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sylar.dir/sylar/fiber.cc.o -MF CMakeFiles/sylar.dir/sylar/fiber.cc.o.d -o CMakeFiles/sylar.dir/sylar/fiber.cc.o -c /home/niufx/C-sylar/sylar/fiber.cc
+
+CMakeFiles/sylar.dir/sylar/fiber.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sylar.dir/sylar/fiber.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"sylar/fiber.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/niufx/C-sylar/sylar/fiber.cc > CMakeFiles/sylar.dir/sylar/fiber.cc.i
+
+CMakeFiles/sylar.dir/sylar/fiber.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sylar.dir/sylar/fiber.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"sylar/fiber.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/niufx/C-sylar/sylar/fiber.cc -o CMakeFiles/sylar.dir/sylar/fiber.cc.s
+
 CMakeFiles/sylar.dir/sylar/util.cc.o: CMakeFiles/sylar.dir/flags.make
 CMakeFiles/sylar.dir/sylar/util.cc.o: /home/niufx/C-sylar/sylar/util.cc
 CMakeFiles/sylar.dir/sylar/util.cc.o: CMakeFiles/sylar.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/niufx/C-sylar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sylar.dir/sylar/util.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/niufx/C-sylar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sylar.dir/sylar/util.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"sylar/util.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sylar.dir/sylar/util.cc.o -MF CMakeFiles/sylar.dir/sylar/util.cc.o.d -o CMakeFiles/sylar.dir/sylar/util.cc.o -c /home/niufx/C-sylar/sylar/util.cc
 
 CMakeFiles/sylar.dir/sylar/util.cc.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/sylar.dir/sylar/util.cc.s: cmake_force
 CMakeFiles/sylar.dir/sylar/config.cc.o: CMakeFiles/sylar.dir/flags.make
 CMakeFiles/sylar.dir/sylar/config.cc.o: /home/niufx/C-sylar/sylar/config.cc
 CMakeFiles/sylar.dir/sylar/config.cc.o: CMakeFiles/sylar.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/niufx/C-sylar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sylar.dir/sylar/config.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/niufx/C-sylar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sylar.dir/sylar/config.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"sylar/config.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sylar.dir/sylar/config.cc.o -MF CMakeFiles/sylar.dir/sylar/config.cc.o.d -o CMakeFiles/sylar.dir/sylar/config.cc.o -c /home/niufx/C-sylar/sylar/config.cc
 
 CMakeFiles/sylar.dir/sylar/config.cc.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/sylar.dir/sylar/config.cc.s: cmake_force
 CMakeFiles/sylar.dir/sylar/thread.cc.o: CMakeFiles/sylar.dir/flags.make
 CMakeFiles/sylar.dir/sylar/thread.cc.o: /home/niufx/C-sylar/sylar/thread.cc
 CMakeFiles/sylar.dir/sylar/thread.cc.o: CMakeFiles/sylar.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/niufx/C-sylar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sylar.dir/sylar/thread.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/niufx/C-sylar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sylar.dir/sylar/thread.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"sylar/thread.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sylar.dir/sylar/thread.cc.o -MF CMakeFiles/sylar.dir/sylar/thread.cc.o.d -o CMakeFiles/sylar.dir/sylar/thread.cc.o -c /home/niufx/C-sylar/sylar/thread.cc
 
 CMakeFiles/sylar.dir/sylar/thread.cc.i: cmake_force
@@ -128,6 +142,7 @@ CMakeFiles/sylar.dir/sylar/thread.cc.s: cmake_force
 # Object files for target sylar
 sylar_OBJECTS = \
 "CMakeFiles/sylar.dir/sylar/log.cc.o" \
+"CMakeFiles/sylar.dir/sylar/fiber.cc.o" \
 "CMakeFiles/sylar.dir/sylar/util.cc.o" \
 "CMakeFiles/sylar.dir/sylar/config.cc.o" \
 "CMakeFiles/sylar.dir/sylar/thread.cc.o"
@@ -136,12 +151,13 @@ sylar_OBJECTS = \
 sylar_EXTERNAL_OBJECTS =
 
 /home/niufx/C-sylar/lib/libsylar.so: CMakeFiles/sylar.dir/sylar/log.cc.o
+/home/niufx/C-sylar/lib/libsylar.so: CMakeFiles/sylar.dir/sylar/fiber.cc.o
 /home/niufx/C-sylar/lib/libsylar.so: CMakeFiles/sylar.dir/sylar/util.cc.o
 /home/niufx/C-sylar/lib/libsylar.so: CMakeFiles/sylar.dir/sylar/config.cc.o
 /home/niufx/C-sylar/lib/libsylar.so: CMakeFiles/sylar.dir/sylar/thread.cc.o
 /home/niufx/C-sylar/lib/libsylar.so: CMakeFiles/sylar.dir/build.make
 /home/niufx/C-sylar/lib/libsylar.so: CMakeFiles/sylar.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/niufx/C-sylar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library /home/niufx/C-sylar/lib/libsylar.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/niufx/C-sylar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library /home/niufx/C-sylar/lib/libsylar.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sylar.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

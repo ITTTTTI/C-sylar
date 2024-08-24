@@ -1,7 +1,8 @@
-CMakeFiles/test_thread.dir/tests/test_thread.cc.o: \
- /home/niufx/C-sylar/tests/test_thread.cc /usr/include/stdc-predef.h \
- /home/niufx/C-sylar/./sylar/sylar.h /home/niufx/C-sylar/./sylar/config.h \
- /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
+CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: \
+ /home/niufx/C-sylar/tests/test_fiber.cc /usr/include/stdc-predef.h \
+ /home/niufx/C-sylar/tests/../sylar/sylar.h \
+ /home/niufx/C-sylar/tests/../sylar/config.h /usr/include/c++/13/memory \
+ /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -601,7 +602,7 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: \
  /usr/include/boost/core/cmath.hpp /usr/include/boost/integer.hpp \
  /usr/include/boost/integer_fwd.hpp \
  /usr/include/boost/detail/basic_pointerbuf.hpp \
- /home/niufx/C-sylar/./sylar/log.h /usr/include/c++/13/list \
+ /home/niufx/C-sylar/tests/../sylar/log.h /usr/include/c++/13/list \
  /usr/include/c++/13/bits/stl_list.h /usr/include/c++/13/bits/list.tcc \
  /usr/include/c++/13/fstream \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
@@ -612,13 +613,15 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: \
  /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/map \
  /usr/include/c++/13/bits/stl_tree.h /usr/include/c++/13/bits/stl_map.h \
  /usr/include/c++/13/bits/stl_multimap.h \
- /usr/include/c++/13/bits/erase_if.h /home/niufx/C-sylar/./sylar/util.h \
+ /usr/include/c++/13/bits/erase_if.h \
+ /home/niufx/C-sylar/tests/../sylar/util.h \
  /usr/include/x86_64-linux-gnu/sys/syscall.h \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
  /usr/include/x86_64-linux-gnu/bits/syscall.h /usr/include/c++/13/cstdint \
- /usr/include/c++/13/cstdarg /home/niufx/C-sylar/./sylar/singleton.h \
- /home/niufx/C-sylar/./sylar/thread.h /usr/include/c++/13/thread \
+ /usr/include/c++/13/cstdarg \
+ /home/niufx/C-sylar/tests/../sylar/singleton.h \
+ /home/niufx/C-sylar/tests/../sylar/thread.h /usr/include/c++/13/thread \
  /usr/include/c++/13/bits/std_thread.h \
  /usr/include/c++/13/bits/this_thread_sleep.h \
  /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
@@ -663,8 +666,8 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: \
  /usr/include/yaml-cpp/node/parse.h /usr/include/yaml-cpp/node/emit.h \
  /usr/include/c++/13/unordered_set \
  /usr/include/c++/13/bits/unordered_set.h \
- /home/niufx/C-sylar/./sylar/macro.h /home/niufx/C-sylar/./sylar/fiber.h \
- /usr/include/ucontext.h \
+ /home/niufx/C-sylar/tests/../sylar/macro.h \
+ /home/niufx/C-sylar/tests/../sylar/fiber.h /usr/include/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h

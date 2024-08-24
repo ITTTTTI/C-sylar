@@ -28,6 +28,7 @@ link_directories(/usr/local/lib)
 
 set(LIB_SRC
     sylar/log.cc
+    sylar/fiber.cc
     sylar/util.cc
     sylar/config.cc
     sylar/thread.cc
@@ -64,6 +65,11 @@ add_executable(test_util tests/test_util.cc)  #创建一个名为 test 的可执
 force_redefine_file_macro_for_sources(test_util)
 add_dependencies(test_util sylar)  #指定 test 可执行文件依赖于 sylar 库。确保在构建 test 之前先构建 sylar 库。
 target_link_libraries(test_util ${LIB_LIB})
+
+add_executable(test_fiber tests/test_fiber.cc)  #创建一个名为 test 的可执行文件，源文件是 tests/test.cc
+force_redefine_file_macro_for_sources(test_fiber)
+add_dependencies(test_fiber sylar)  #指定 test 可执行文件依赖于 sylar 库。确保在构建 test 之前先构建 sylar 库。
+target_link_libraries(test_fiber ${LIB_LIB})
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin) #可执行文件的输出路径
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)  #设置库文件的输出路径

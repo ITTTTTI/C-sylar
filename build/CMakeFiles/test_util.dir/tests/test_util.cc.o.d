@@ -666,4 +666,8 @@ CMakeFiles/test_util.dir/tests/test_util.cc.o: \
  /usr/include/yaml-cpp/node/parse.h /usr/include/yaml-cpp/node/emit.h \
  /usr/include/c++/13/unordered_set \
  /usr/include/c++/13/bits/unordered_set.h \
- /home/niufx/C-sylar/tests/../sylar/macro.h
+ /home/niufx/C-sylar/tests/../sylar/macro.h \
+ /home/niufx/C-sylar/tests/../sylar/fiber.h /usr/include/ucontext.h \
+ /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
+ /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+ /usr/include/x86_64-linux-gnu/bits/types/stack_t.h
