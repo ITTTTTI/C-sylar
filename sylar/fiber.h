@@ -7,7 +7,10 @@
 #include "thread.h"
 namespace sylar
 {
+
+class Scheduler;
 class Fiber : public std::enable_shared_from_this<Fiber>{
+friend class Scheduler;
 public:
     typedef std::shared_ptr<Fiber> ptr;
     enum State{
@@ -16,7 +19,7 @@ public:
         EXEC, //Fiber 对象正在执行
         TERM, //对象已终止或结束执行
         READY, 
-        EXCEPT //Fiber 对象已准备好执行，但尚未开始
+        EXCEPT, //Fiber 对象已准备好执行，但尚未开始
     };
 private:
     Fiber();//禁用默认构造函数
@@ -31,6 +34,7 @@ public:
     void swapOut();
 
     uint64_t getId() const {return m_id;}
+    State getState() const {return m_state;}
 public:
     //设置当前协程对象
     static void SetThis(Fiber* f);

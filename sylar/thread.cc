@@ -10,7 +10,7 @@ namespace sylar{
 
 static thread_local Thread* t_thread =nullptr;
 static thread_local std::string t_thread_name= "UNKNOW";
-
+//thread_local：它声明的变量对于每个线程来说都是独立的，也就是说每个线程都有自己的一份独立的 t_thread 和 t_thread_name。不同线程之间对这些变量的修改互不影响。
 static sylar::Logger::ptr g_logger =SYLAR_LOG_NAME("system");
 
 Semaphore::Semaphore(uint32_t count){
@@ -75,6 +75,7 @@ Thread::Thread(std::function<void()> cb ,const std::string& name):m_cb(cb),m_nam
 
     // 创建线程
     int rt =pthread_create(&m_thread,nullptr,&Thread::run,this);
+    
 
     // 如果线程创建失败
     if(rt){
@@ -88,7 +89,9 @@ Thread::Thread(std::function<void()> cb ,const std::string& name):m_cb(cb),m_nam
 }//std::function<void()> cb：这是一个std::function对象，它被模板化为一个无参数、无返回值的函数签名（void()）。这意味着cb可以是一个普通函数、lambda表达式、函数对象（即重载了operator()的对象）、或者任何其他可调用对象，只要它们满足这个签名（即它们可以接受零个参数并返回一个void类型的值）
 Thread::~Thread(){
     if(m_thread){
-        pthread_detach(m_thread);//用于设置线程的属性，使其变为“分离”状态。这个函数的主要目的是在线程结束时自动回收线程的资源，而不需要用户显式地等待（join）该线程。
+        pthread_detach(m_thread);
+        //用于设置线程的属性，使其变为“分离”状态。
+        //这个函数的主要目的是在线程结束时自动回收线程的资源，而不需要用户显式地等待（join）该线程。
     }
     
 }

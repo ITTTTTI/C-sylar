@@ -1,7 +1,8 @@
 #include<iostream>
 #include"../sylar/log.h"
 #include"../sylar/util.h"
-#include<thread>
+#include"../sylar/sylar.h"
+#include  <thread>
  
 int main(int argc,char** argv){
     sylar::Logger::ptr logger(new sylar::Logger);
@@ -11,7 +12,7 @@ int main(int argc,char** argv){
     file_appender->setLevel(sylar::LogLevel::ERROR);
     logger->addAppender(file_appender);
 
-    sylar::LogEvent::ptr event(new sylar::LogEvent(logger,sylar::LogLevel::DEBUG,__FILE__,__LINE__,0,sylar::GetThreadId(),sylar::GetFiberId(),time(0)));
+    sylar::LogEvent::ptr event(new sylar::LogEvent(logger,sylar::LogLevel::DEBUG,__FILE__,__LINE__,0,sylar::GetThreadId(),sylar::GetFiberId(),time(0),sylar::Thread::GetName()));
     event->getSS()<<"hello sylar log";
     logger->log(sylar::LogLevel::DEBUG,event);
     std::cout<<"Hello World"<<std::endl;

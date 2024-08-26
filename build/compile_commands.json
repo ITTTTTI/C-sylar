@@ -31,6 +31,12 @@
 },
 {
   "directory": "/home/niufx/C-sylar/build",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/scheduler.cc\\\" -I/home/niufx/C-sylar/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/sylar.dir/sylar/scheduler.cc.o -c /home/niufx/C-sylar/sylar/scheduler.cc",
+  "file": "/home/niufx/C-sylar/sylar/scheduler.cc",
+  "output": "CMakeFiles/sylar.dir/sylar/scheduler.cc.o"
+},
+{
+  "directory": "/home/niufx/C-sylar/build",
   "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test.cc\\\" -I/home/niufx/C-sylar/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -o CMakeFiles/test.dir/tests/test.cc.o -c /home/niufx/C-sylar/tests/test.cc",
   "file": "/home/niufx/C-sylar/tests/test.cc",
   "output": "CMakeFiles/test.dir/tests/test.cc.o"

@@ -32,6 +32,7 @@ set(LIB_SRC
     sylar/util.cc
     sylar/config.cc
     sylar/thread.cc
+    sylar/scheduler.cc
     )
 
 set(LIB_LIB

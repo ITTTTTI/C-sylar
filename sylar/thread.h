@@ -272,12 +272,12 @@ private:
 
     static void* run(void* arg);
 private:
-    pid_t m_id = -1;
-    pthread_t m_thread=0;
-    std::function<void()> m_cb;
-    std::string m_name;
+    pid_t m_id = -1; // 线程ID
+    pthread_t m_thread=0; // 线程句柄
+    std::function<void()> m_cb; // 线程回调函数
+    std::string m_name; // 线程名称
 
-    Semaphore m_semaphore;
+    Semaphore m_semaphore; // 信号量
 
 };
 

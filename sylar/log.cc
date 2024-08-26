@@ -8,6 +8,7 @@
 #include <time.h>
 #include "config.h"
 #include <iostream>
+#include "thread.h"
 
 
 
@@ -71,84 +72,89 @@ std::stringstream& LogEventWrap::getSS(){
 
 class MessageFormatItem:public LogFormatter::FormatItem{
 public:
-    MessageFormatItem(const std::string& str=""){ }
-    void format(std::ostream& os,std::shared_ptr<Logger> logger, LogLevel::Level Level,LogEvent::ptr event) override{
-        os<<event->getContent();
-    }
+MessageFormatItem(const std::string& str=""){ }
+void format(std::ostream& os,std::shared_ptr<Logger> logger, LogLevel::Level Level,LogEvent::ptr event) override{
+    os<<event->getContent();
+}
 
-
-    };
+};
 
 class LevelFormatItem:public LogFormatter::FormatItem{
 public:
-    LevelFormatItem(const std::string& str=""){ }
-    void format(std::ostream& os, Logger::ptr logger , LogLevel::Level level,LogEvent::ptr event) override{
-        os<<LogLevel::ToString(level);
-    };
+LevelFormatItem(const std::string& str=""){ }
+void format(std::ostream& os, Logger::ptr logger , LogLevel::Level level,LogEvent::ptr event) override{
+    os<<LogLevel::ToString(level);
+}
    
 };
 
 
 class NameFormatItem:public LogFormatter::FormatItem{
 public:
-    NameFormatItem(const std::string& str=""){ }
-    void format(std::ostream& os, Logger::ptr logger , LogLevel::Level level,LogEvent::ptr event) override{
-        os<<event->getLogger()->getName();
-};
+NameFormatItem(const std::string& str=""){ }
+void format(std::ostream& os, Logger::ptr logger , LogLevel::Level level,LogEvent::ptr event) override{
+    os<<event->getLogger()->getName();
+}
 };
 
 class ElapseFormatItem:public LogFormatter::FormatItem{
 public:
-    ElapseFormatItem(const std::string& str=""){ }
-    void format(std::ostream& os, Logger::ptr logger , LogLevel::Level level,LogEvent::ptr event) override{
-        os<<event->getElapse();
-};
+ElapseFormatItem(const std::string& str=""){ }
+void format(std::ostream& os, Logger::ptr logger , LogLevel::Level level,LogEvent::ptr event) override{
+    os<<event->getElapse();
+}
 };
 
 class ThreadIdFormatItem:public LogFormatter::FormatItem{
 public:
-    ThreadIdFormatItem(const std::string& str=""){ }
-    void format(std::ostream& os, Logger::ptr logger , LogLevel::Level level,LogEvent::ptr event) override{
-        os<<event->getThreadId();
-};
+ThreadIdFormatItem(const std::string& str=""){ }
+void format(std::ostream& os, Logger::ptr logger , LogLevel::Level level,LogEvent::ptr event) override{
+    os<<event->getThreadId();
+}
 };
 
 class FiberIdFormatItem:public LogFormatter::FormatItem{
 public:
-    FiberIdFormatItem(const std::string& str=""){ }
-        void format(std::ostream& os, Logger::ptr logger , LogLevel::Level level,LogEvent::ptr event) override{
-            // 输出事件所属的Fiber ID
-            os<<event->getFiberId();
+FiberIdFormatItem(const std::string& str=""){ }
+void format(std::ostream& os, Logger::ptr logger , LogLevel::Level level,LogEvent::ptr event) override{
+    // 输出事件所属的Fiber ID
+    os<<event->getFiberId();
+}
+};
 
-
-    };
+class ThreadNameFormatItem:public LogFormatter::FormatItem{
+public:
+ThreadNameFormatItem(const std::string& str=""){ }
+void format(std::ostream& os, std::shared_ptr<Logger> logger, LogLevel::Level Level,LogEvent::ptr event){
+    os<<event->getThreadName();
+}
 };
 
 class DateTimeFormatItem:public LogFormatter::FormatItem{
 public:
-        DateTimeFormatItem(const std::string& format ="%Y-%m-%d %H:%M:%S") // 构造函数，接受一个可选的日期时间格式字符串作为参数
-            :m_format(format) // 初始化成员变量m_format为传入的参数值
-        {
-            // 如果m_format为空
-            if(m_format.empty()){
-                // 将m_format设置为默认的日期时间格式
-                m_format = "%Y-%m-%d %H:%M:%S";
-            }
-        }
-        void format(std::ostream& os,Logger::ptr logger , LogLevel::Level level,LogEvent::ptr event) override{
-            // 定义一个time_t类型的结构体tm，用于存储本地时间
-            struct tm tm;
-            // 获取事件的时间戳
-            time_t time =event->getTime();
-            // 将时间戳转换为本地时间，并存储在tm结构体中
-            localtime_r( &time, &tm);
-            // 定义一个字符数组buf，用于存储格式化后的时间字符串
-            char buf[64];
-            // 使用strftime函数将tm结构体中的时间按照指定的格式m_format转换为字符串，并存储在buf中
-            strftime(buf, sizeof buf, m_format.c_str(), &tm);
-            // 将格式化后的时间字符串输出到ostream中
-            os<<buf;
-        }
+DateTimeFormatItem(const std::string& format ="%Y-%m-%d %H:%M:%S") // 构造函数，接受一个可选的日期时间格式字符串作为参数
+    :m_format(format) // 初始化成员变量m_format为传入的参数值
+{
+    // 如果m_format为空
+    if(m_format.empty()){
+        // 将m_format设置为默认的日期时间格式
+        m_format = "%Y-%m-%d %H:%M:%S";
+    }
+}
+void format(std::ostream& os,Logger::ptr logger , LogLevel::Level level,LogEvent::ptr event) override{
+    // 定义一个time_t类型的结构体tm，用于存储本地时间
+    struct tm tm;
+    // 获取事件的时间戳
+    time_t time =event->getTime();
+    // 将时间戳转换为本地时间，并存储在tm结构体中
+    localtime_r( &time, &tm);
+    // 定义一个字符数组buf，用于存储格式化后的时间字符串
+    char buf[64];
+    // 使用strftime函数将tm结构体中的时间按照指定的格式m_format转换为字符串，并存储在buf中
+    strftime(buf, sizeof buf, m_format.c_str(), &tm);
+    // 将格式化后的时间字符串输出到ostream中
+    os<<buf;
+}
 private:
     std::string m_format;
 };
@@ -156,64 +162,58 @@ private:
 
 class FileNameFormatItem:public LogFormatter::FormatItem{
 public:
-        FileNameFormatItem(const std::string& str=""){ }
-        void format(std::ostream& os, Logger::ptr logger , LogLevel::Level level,LogEvent::ptr event) override{
-            // 输出事件所属的Fiber ID
-            os<<event->getFile();
-
-
-    };
+FileNameFormatItem(const std::string& str=""){ }
+void format(std::ostream& os, Logger::ptr logger , LogLevel::Level level,LogEvent::ptr event) override{
+    // 输出事件所属的Fiber ID
+    os<<event->getFile();
+}
 };
 
 class LineFormatItem:public LogFormatter::FormatItem{
 public:
-        LineFormatItem(const std::string& str=""){ }//构造函数不用分号
-            void format(std::ostream& os, Logger::ptr logger , LogLevel::Level level,LogEvent::ptr event) override{
-                // 输出事件所属的Fiber ID
-                // 输出事件所在的行号
-                // 输出事件所属的Fiber ID
-                os << event->getLine();
-
-
-        };
+LineFormatItem(const std::string& str=""){ }//构造函数不用分号
+void format(std::ostream& os, Logger::ptr logger , LogLevel::Level level,LogEvent::ptr event) override{
+    // 输出事件所属的Fiber ID
+    // 输出事件所在的行号
+    // 输出事件所属的Fiber ID
+    os << event->getLine();
+}
 };
 
 class NewLineFormatItem:public LogFormatter::FormatItem{
 public:
-        NewLineFormatItem(const std::string& str=""){ }
-        void format(std::ostream& os, Logger::ptr logger , LogLevel::Level level,LogEvent::ptr event) override{
-            // 输出事件所属的Fiber ID
-            os<<std::endl;
-
-
-    };
+NewLineFormatItem(const std::string& str=""){ }
+void format(std::ostream& os, Logger::ptr logger , LogLevel::Level level,LogEvent::ptr event) override{
+    // 输出事件所属的Fiber ID
+    os<<std::endl;
+}
 };
 
 class StringFormatItem:public LogFormatter::FormatItem{
 public:
-        StringFormatItem(const std::string& str): m_string(str){}
-        void format(std::ostream& os, Logger::ptr logger , LogLevel::Level level,LogEvent::ptr event) override{
-            // 输出事件所属的Fiber ID
-            os<<m_string;
-        }
+StringFormatItem(const std::string& str): m_string(str){}
+void format(std::ostream& os, Logger::ptr logger , LogLevel::Level level,LogEvent::ptr event) override{
+    // 输出事件所属的Fiber ID
+    os<<m_string;
+}
 
 private:
     std::string m_string;
 };
 
 class TabFormatItem : public LogFormatter::FormatItem {
-    public:
-    TabFormatItem(const std::string& str=""){}
-    void format(std::ostream& os, Logger::ptr logger , LogLevel::Level level,LogEvent::ptr event) override
-    {
-        os<<"\t";
-    }
+public:
+TabFormatItem(const std::string& str=""){}
+void format(std::ostream& os, Logger::ptr logger , LogLevel::Level level,LogEvent::ptr event) override
+{
+    os<<"\t";
+}
  private:
       std::string m_string;
 };
 
-LogEvent::LogEvent(std::shared_ptr<Logger> logger,LogLevel::Level level,
-const char* file,int32_t line,uint32_t elapse, uint32_t threadId, uint32_t fiberId, uint64_t time)
+LogEvent::LogEvent(std::shared_ptr<Logger> logger,LogLevel::Level level, const char* file,
+    int32_t line,uint32_t elapse, uint32_t threadId, uint32_t fiberId, uint64_t time,const std::string& thread_name)
 :m_file(file),
 m_line(line),
 m_elapse(elapse),
@@ -221,12 +221,13 @@ m_threadId(threadId),
 m_fiberId(fiberId),
 m_time(time),
 m_logger(logger),
-m_level(level)
+m_level(level),
+m_threadName(thread_name)
 {
 }
 
 Logger::Logger(const std::string& name):m_name(name),m_level(LogLevel::DEBUG) {
-            m_formatter.reset(new LogFormatter("%d{%Y-%m-%d %H:%M:%S}%T%t%T%F%T[%p]%T[%c]%T%f:%l%T%m%n"));
+            m_formatter.reset(new LogFormatter("%d{%Y-%m-%d %H:%M:%S}%T%t%T%N%T%F%T[%p]%T[%c]%T%f:%l%T%m%n"));
     }
 
 void Logger::setFormatter(LogFormatter::ptr val){
@@ -584,6 +585,7 @@ void LogFormatter::init() {
         XX(l, LineFormatItem),              //l:行号
         XX(T, TabFormatItem),               //T:Tab
         XX(F, FiberIdFormatItem),           //F:协程id
+        XX(N, ThreadNameFormatItem),        //F:线程名称
 #undef XX
     };
 
