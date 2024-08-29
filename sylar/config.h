@@ -56,7 +56,7 @@ public:
 template<class T>
 class LexicalCast< std::string ,std::vector<T>>{
     public:
-    std::list<T> operator()(const std::string& v){
+    std::vector<T> operator()(const std::string& v){
         YAML::Node node =YAML::Load(v);
         typename std::vector<T> vec;
         std::stringstream ss;
@@ -214,7 +214,7 @@ class LexicalCast<std::map<std::string,T>,std::string>{
 template<class T>
 class LexicalCast<std::string,std::unordered_map<std::string,T>>{
     public:
-    std::map<std::string,T> operator()(const std::string& v){
+    std::unordered_map<std::string,T> operator()(const std::string& v){
         YAML::Node node =YAML::Load(v);
         typename std::unordered_map<std::string,T> vec;
         std::stringstream ss;

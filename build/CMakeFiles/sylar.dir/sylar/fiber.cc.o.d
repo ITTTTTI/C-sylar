@@ -667,4 +667,5 @@ CMakeFiles/sylar.dir/sylar/fiber.cc.o: /home/niufx/C-sylar/sylar/fiber.cc \
  /usr/include/yaml-cpp/node/parse.h /usr/include/yaml-cpp/node/emit.h \
  /usr/include/c++/13/unordered_set \
  /usr/include/c++/13/bits/unordered_set.h \
- /home/niufx/C-sylar/sylar/macro.h /usr/include/c++/13/iostream
+ /home/niufx/C-sylar/sylar/macro.h /usr/include/c++/13/iostream \
+ /home/niufx/C-sylar/sylar/scheduler.h

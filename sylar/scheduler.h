@@ -21,7 +21,7 @@ public:
     static Scheduler* GetThis();
     static Fiber* GetMainFiber(); 
 
-    void start();
+    void start();//创建线程池
     void stop(); //
 
     template<class FiberOrCb>
@@ -43,6 +43,7 @@ public:
             MutexType::Lock lock(m_mutex);
             while(begin!=end){
                 tickle=scheduleNoLock(&*begin)||need_tickle;
+                ++begin;
 
             }
         }
@@ -53,9 +54,9 @@ public:
 
 protected:
    virtual void tickle();
-   void run();
    virtual bool stopping();
    virtual void idle();
+   void run();
    void setThis();
 private:
     template<class FiberOrCb>
@@ -72,30 +73,30 @@ private:
     {
         Fiber::ptr fiber;
         std::function<void()> cb;
-        int thread_id;
+        int thread;
 
-        FiberAndThread(Fiber::ptr f, int thr):fiber(f),thread_id(thr){
+        FiberAndThread(Fiber::ptr f, int thr):fiber(f),thread(thr){
         }
 
-        FiberAndThread(Fiber::ptr* f, int thr):thread_id(thr){
+        FiberAndThread(Fiber::ptr* f, int thr):thread(thr){
             fiber.swap(*f);
         }
 
-        FiberAndThread(std::function<void()> f,int thr):cb(f),thread_id(thr){
+        FiberAndThread(std::function<void()> f,int thr):cb(f),thread(thr){
 
         }
 
-        FiberAndThread(std::function<void()>* f,int thr):thread_id(thr){
+        FiberAndThread(std::function<void()>* f,int thr):thread(thr){
             cb.swap(*f);
         }
 
-        FiberAndThread():thread_id(-1){
+        FiberAndThread():thread(-1){
         }
 
         void reset(){
             fiber=nullptr;
             cb=nullptr;
-            thread_id =-1;
+            thread =-1;
         }
 
     };

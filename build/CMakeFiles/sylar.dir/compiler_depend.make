@@ -772,6 +772,7 @@ CMakeFiles/sylar.dir/sylar/fiber.cc.o: /home/niufx/C-sylar/sylar/fiber.cc \
   /home/niufx/C-sylar/sylar/fiber.h \
   /home/niufx/C-sylar/sylar/log.h \
   /home/niufx/C-sylar/sylar/macro.h \
+  /home/niufx/C-sylar/sylar/scheduler.h \
   /home/niufx/C-sylar/sylar/singleton.h \
   /home/niufx/C-sylar/sylar/thread.h \
   /home/niufx/C-sylar/sylar/util.h \
@@ -2427,6 +2428,7 @@ CMakeFiles/sylar.dir/sylar/scheduler.cc.o: /home/niufx/C-sylar/sylar/scheduler.c
   /usr/include/c++/13/initializer_list \
   /usr/include/c++/13/ios \
   /usr/include/c++/13/iosfwd \
+  /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/list \
@@ -3211,9 +3213,9 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: /home/niufx/C-sylar/sylar/util.cc \
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
-/home/niufx/C-sylar/sylar/scheduler.h:
-
 /home/niufx/C-sylar/sylar/log.cc:
+
+/home/niufx/C-sylar/sylar/scheduler.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
 

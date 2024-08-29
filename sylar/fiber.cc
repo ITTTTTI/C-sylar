@@ -6,6 +6,7 @@
 #include <iostream>
 #include <atomic>
 #include <memory>
+#include "scheduler.h"
 
 namespace sylar{
 
@@ -52,6 +53,7 @@ Fiber::Fiber(){
     }
 
     ++s_fiber_count;
+    SYLAR_LOG_DEBUG(g_logger) << "Fiber::Fiber main";
 }
 // uint64_t m_id=0;//协程id
 // uint32_t m_stacksize =0;//协程栈大小
@@ -61,7 +63,7 @@ Fiber::Fiber(){
 // void* m_stack =nullptr; //协程栈
 
 // std::function<void()> m_cb; //协程函数
-Fiber::Fiber(std::function<void()> cb,size_t stacksize):m_id(++s_fiber_id),m_cb(cb){
+Fiber::Fiber(std::function<void()> cb,size_t stacksize,bool use_caller):m_id(++s_fiber_id),m_cb(cb){
     ++s_fiber_count;
     m_stacksize=stacksize?stacksize:g_fiber_stack_size->getValue();
     m_stack=StackAllocator::Alloc(m_stacksize);
@@ -77,8 +79,18 @@ Fiber::Fiber(std::function<void()> cb,size_t stacksize):m_id(++s_fiber_id),m_cb(
     m_ctx.uc_stack.ss_sp=m_stack; //栈指针（ss_sp）设置为m_stack。m_stack是一个指向内存区域的指针，这个内存区域被用作这个上下文的栈空间
     m_ctx.uc_stack.ss_size=m_stacksize;//这行代码设置这个栈空间的大小为m_stacksize。ss_size是栈的大小，以字节为单位。
 
-    makecontext(&m_ctx, &Fiber::MainFunc, 0);//这行代码使用makecontext函数来初始化m_ctx上下文，以便它可以执行Fiber类的MainFunc成员函数。makecontext的第一个参数是指向ucontext_t结构的指针，即我们要设置的上下文。
+    if(!use_caller){
+        makecontext(&m_ctx, &Fiber::MainFunc, 0);
+        //这行代码使用makecontext函数来初始化m_ctx上下文，
+        //以便它可以执行Fiber类的MainFunc成员函数。
+        //makecontext的第一个参数是指向ucontext_t结构的指针，即我们要设置的上下文。
+    }
+    else{
+        makecontext(&m_ctx, &Fiber::CallerMainFunc, 0);
 
+    }
+    
+    SYLAR_LOG_DEBUG(g_logger) << "Fiber::Fiber id=" << m_id;
 }
 Fiber::~Fiber(){
     --s_fiber_count;
@@ -95,6 +107,9 @@ Fiber::~Fiber(){
             SetThis(nullptr);
         }
     }
+
+    SYLAR_LOG_DEBUG(g_logger) << "Fiber::~Fiber id=" << m_id
+                              << " total=" << s_fiber_count;
     
 }
 void Fiber::reset(std::function<void()>cb){
@@ -113,6 +128,22 @@ void Fiber::reset(std::function<void()>cb){
     m_state=INIT;
 
 }
+
+void Fiber::call(){
+    SetThis(this);
+    m_state=EXEC;
+    if(swapcontext(&t_threadFiber->m_ctx,&m_ctx)){
+            SYLAR_ASSERT2(false,"swapcontext");
+        }
+}
+
+void Fiber::back(){
+    SetThis(t_threadFiber.get());
+    if(swapcontext(&m_ctx,&t_threadFiber->m_ctx)){
+        SYLAR_ASSERT2(false,"swapcontext");
+    }
+}
+
 //切换到当前协程执行
 void Fiber::swapIn(){
     SetThis(this);
@@ -130,6 +161,7 @@ void Fiber::swapOut(){
     if(swapcontext(&m_ctx,&t_threadFiber->m_ctx)){
         SYLAR_ASSERT2(false,"swapcontext");
     }
+    
 
 }
 
@@ -150,18 +182,51 @@ Fiber::ptr Fiber::GetThis(){
 //协程切换到后台，状态ready
 void Fiber::YieldToReady(){
     Fiber::ptr cur=GetThis();
+    //SYLAR_ASSERT(cur->m_state == EXEC);
     cur->m_state=READY;
     cur->swapOut();
 }
 //协程切换到后台，状态hold
 void Fiber::YieldToHold(){
     Fiber::ptr cur=GetThis();
+    //SYLAR_ASSERT(cur->m_state == EXEC);
     cur->m_state=HOLD;
     cur->swapOut();
 }
 //总协程数
-uint64_t TotalFibers(){
+uint64_t Fiber::TotalFibers(){
     return s_fiber_count;
+}
+
+void Fiber::CallerMainFunc(){
+    Fiber::ptr cur=GetThis();
+    SYLAR_ASSERT(cur);
+    try
+    {
+        cur->m_cb();
+        cur->m_cb=nullptr;
+        cur->m_state=TERM;
+
+    }
+    catch(std::exception& e){
+        cur->m_state=EXCEPT;
+        SYLAR_LOG_ERROR(g_logger)<<"Fiber Except: "<<e.what()<<"fiber id="
+        <<cur->GetFiberId()<<std::endl
+
+        <<sylar::BacktraceToString();
+    }
+    catch(...){
+        SYLAR_LOG_ERROR(g_logger)<<"Fiber Except: ";
+
+    }
+
+    auto raw_ptr=cur.get();
+    cur.reset();
+    raw_ptr->back();
+
+    SYLAR_ASSERT2(false,"never reach fiber_id="+std::to_string(raw_ptr->getId()));
+
+
 }
 
 void Fiber::MainFunc(){
@@ -176,7 +241,9 @@ void Fiber::MainFunc(){
     }
     catch(std::exception& e){
         cur->m_state=EXCEPT;
-        SYLAR_LOG_ERROR(g_logger)<<"Fiber Except: "<<e.what();
+        SYLAR_LOG_ERROR(g_logger)<<"Fiber Except: "<<e.what()<<"fiber id="
+        <<cur->GetFiberId()<<std::endl
+        <<sylar::BacktraceToString();
     }
     catch(...){
         SYLAR_LOG_ERROR(g_logger)<<"Fiber Except: ";
@@ -186,6 +253,8 @@ void Fiber::MainFunc(){
     auto raw_ptr=cur.get();
     cur.reset();
     raw_ptr->swapOut();
+
+    SYLAR_ASSERT2(false,"never reach fiber_id="+std::to_string(raw_ptr->getId()));
 
 }
 

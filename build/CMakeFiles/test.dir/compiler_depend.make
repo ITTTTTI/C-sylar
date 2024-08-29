@@ -6,6 +6,7 @@ CMakeFiles/test.dir/tests/test.cc.o: /home/niufx/C-sylar/tests/test.cc \
   /home/niufx/C-sylar/sylar/fiber.h \
   /home/niufx/C-sylar/sylar/log.h \
   /home/niufx/C-sylar/sylar/macro.h \
+  /home/niufx/C-sylar/sylar/scheduler.h \
   /home/niufx/C-sylar/sylar/singleton.h \
   /home/niufx/C-sylar/sylar/sylar.h \
   /home/niufx/C-sylar/sylar/thread.h \
@@ -866,12 +867,6 @@ CMakeFiles/test.dir/tests/test.cc.o: /home/niufx/C-sylar/tests/test.cc \
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
@@ -1272,12 +1267,6 @@ CMakeFiles/test.dir/tests/test.cc.o: /home/niufx/C-sylar/tests/test.cc \
 
 /usr/include/boost/mpl/aux_/include_preprocessed.hpp:
 
-/usr/include/c++/13/fstream:
-
-/usr/include/boost/preprocessor/control/while.hpp:
-
-/usr/include/c++/13/bits/std_function.h:
-
 /usr/include/boost/mpl/protect.hpp:
 
 /usr/include/boost/preprocessor/facilities/identity.hpp:
@@ -1324,8 +1313,6 @@ CMakeFiles/test.dir/tests/test.cc.o: /home/niufx/C-sylar/tests/test.cc \
 
 /usr/include/boost/detail/workaround.hpp:
 
-/usr/include/boost/current_function.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/boost/preprocessor/arithmetic/detail/is_1_number.hpp:
@@ -1344,11 +1331,27 @@ CMakeFiles/test.dir/tests/test.cc.o: /home/niufx/C-sylar/tests/test.cc \
 
 /usr/include/boost/container/detail/std_fwd.hpp:
 
+/usr/include/boost/mpl/aux_/config/ttp.hpp:
+
+/usr/include/boost/mpl/aux_/config/gcc.hpp:
+
+/usr/include/boost/container/container_fwd.hpp:
+
+/usr/include/boost/next_prior.hpp:
+
+/usr/include/boost/type_traits/add_lvalue_reference.hpp:
+
 /usr/include/boost/config/user.hpp:
 
 /usr/include/boost/preprocessor/control/iif.hpp:
 
 /usr/include/boost/mpl/aux_/largest_int.hpp:
+
+/usr/include/limits.h:
+
+/usr/include/c++/13/cstdlib:
+
+/usr/include/boost/mpl/aux_/config/has_apply.hpp:
 
 /usr/include/boost/config/stdlib/libstdcpp3.hpp:
 
@@ -1376,22 +1379,6 @@ CMakeFiles/test.dir/tests/test.cc.o: /home/niufx/C-sylar/tests/test.cc \
 
 /usr/include/boost/mpl/aux_/config/integral.hpp:
 
-/usr/include/boost/mpl/aux_/static_cast.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/boost/preprocessor/arithmetic/limits/inc_256.hpp:
-
-/usr/include/boost/mpl/aux_/arity.hpp:
-
-/usr/include/boost/iterator/iterator_concepts.hpp:
-
-/usr/include/boost/config/detail/select_platform_config.hpp:
-
-/usr/include/boost/lexical_cast/detail/widest_char.hpp:
-
-/usr/include/boost/preprocessor/control/deduce_d.hpp:
-
 /usr/include/asm-generic/errno-base.h:
 
 /usr/include/yaml-cpp/node/detail/node_data.h:
@@ -1407,6 +1394,30 @@ CMakeFiles/test.dir/tests/test.cc.o: /home/niufx/C-sylar/tests/test.cc \
 /usr/include/c++/13/limits:
 
 /usr/include/boost/mpl/arg_fwd.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/bind.hpp:
+
+/usr/include/yaml-cpp/node/detail/node_iterator.h:
+
+/usr/include/boost/concept/detail/backward_compatibility.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/apply_fwd.hpp:
+
+/usr/include/boost/preprocessor/seq/fold_left.hpp:
+
+/usr/include/boost/mpl/aux_/config/adl.hpp:
+
+/usr/include/boost/current_function.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/home/niufx/C-sylar/sylar/scheduler.h:
+
+/usr/include/boost/type_traits/is_lvalue_reference.hpp:
 
 /usr/include/boost/concept/detail/concept_def.hpp:
 
@@ -1444,19 +1455,17 @@ CMakeFiles/test.dir/tests/test.cc.o: /home/niufx/C-sylar/tests/test.cc \
 
 /usr/include/boost/concept/detail/general.hpp:
 
+/usr/include/boost/type.hpp:
+
+/usr/include/c++/13/algorithm:
+
 /usr/include/boost/numeric/conversion/detail/conversion_traits.hpp:
 
 /usr/include/boost/preprocessor/facilities/empty.hpp:
 
 /usr/include/boost/detail/indirect_traits.hpp:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/bind.hpp:
-
 /usr/include/boost/mpl/aux_/arity_spec.hpp:
-
-/usr/include/boost/lexical_cast/detail/lcast_unsigned_converters.hpp:
-
-/usr/include/boost/iterator/iterator_categories.hpp:
 
 /home/niufx/C-sylar/sylar/log.h:
 
@@ -1476,10 +1485,6 @@ CMakeFiles/test.dir/tests/test.cc.o: /home/niufx/C-sylar/tests/test.cc \
 
 /usr/include/boost/mpl/aux_/config/compiler.hpp:
 
-/usr/include/boost/mpl/aux_/config/gcc.hpp:
-
-/usr/include/boost/mpl/aux_/config/ttp.hpp:
-
 /usr/include/boost/mpl/limits/arity.hpp:
 
 /usr/include/boost/preprocessor/seq/for_each_i.hpp:
@@ -1493,6 +1498,26 @@ CMakeFiles/test.dir/tests/test.cc.o: /home/niufx/C-sylar/tests/test.cc \
 /usr/include/boost/iterator/iterator_traits.hpp:
 
 /usr/include/c++/13/cmath:
+
+/usr/include/boost/mpl/aux_/static_cast.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/boost/preprocessor/arithmetic/limits/inc_256.hpp:
+
+/usr/include/boost/mpl/aux_/arity.hpp:
+
+/usr/include/boost/iterator/iterator_concepts.hpp:
+
+/usr/include/boost/iterator/iterator_categories.hpp:
+
+/usr/include/boost/lexical_cast/detail/lcast_unsigned_converters.hpp:
+
+/usr/include/boost/config/detail/select_platform_config.hpp:
+
+/usr/include/boost/lexical_cast/detail/widest_char.hpp:
+
+/usr/include/boost/preprocessor/control/deduce_d.hpp:
 
 /usr/include/boost/lexical_cast.hpp:
 
@@ -1581,26 +1606,6 @@ CMakeFiles/test.dir/tests/test.cc.o: /home/niufx/C-sylar/tests/test.cc \
 /usr/include/boost/mpl/next_prior.hpp:
 
 /usr/include/boost/mpl/aux_/config/eti.hpp:
-
-/usr/include/yaml-cpp/node/detail/node_iterator.h:
-
-/usr/include/boost/concept/detail/backward_compatibility.hpp:
-
-/usr/include/c++/13/algorithm:
-
-/usr/include/boost/type.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/apply_fwd.hpp:
-
-/usr/include/boost/preprocessor/seq/fold_left.hpp:
-
-/usr/include/boost/mpl/aux_/config/adl.hpp:
-
-/usr/include/boost/container/container_fwd.hpp:
-
-/usr/include/boost/next_prior.hpp:
-
-/usr/include/boost/type_traits/add_lvalue_reference.hpp:
 
 /usr/include/boost/integer_traits.hpp:
 
@@ -1771,6 +1776,12 @@ CMakeFiles/test.dir/tests/test.cc.o: /home/niufx/C-sylar/tests/test.cc \
 /usr/include/boost/preprocessor/seq/transform.hpp:
 
 /usr/include/c++/13/bits/valarray_before.h:
+
+/usr/include/c++/13/fstream:
+
+/usr/include/boost/preprocessor/control/while.hpp:
+
+/usr/include/c++/13/bits/std_function.h:
 
 /usr/include/boost/preprocessor/debug/error.hpp:
 
@@ -2082,8 +2093,6 @@ CMakeFiles/test.dir/tests/test.cc.o: /home/niufx/C-sylar/tests/test.cc \
 
 /usr/include/boost/type_traits/is_float.hpp:
 
-/usr/include/boost/type_traits/is_lvalue_reference.hpp:
-
 /usr/include/boost/preprocessor/logical/bitand.hpp:
 
 /usr/include/boost/type_traits/is_member_function_pointer.hpp:
@@ -2315,9 +2324,3 @@ CMakeFiles/test.dir/tests/test.cc.o: /home/niufx/C-sylar/tests/test.cc \
 /usr/include/math.h:
 
 /usr/include/c++/13/cstdio:
-
-/usr/include/limits.h:
-
-/usr/include/boost/mpl/aux_/config/has_apply.hpp:
-
-/usr/include/c++/13/cstdlib:
