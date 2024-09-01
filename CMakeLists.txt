@@ -24,7 +24,7 @@ include_directories(.)
 include_directories(/usr/local/include)
 
 link_directories(/usr/local/lib)
-
+find_library(YAMLCPP yaml-cpp)
 
 set(LIB_SRC
     sylar/log.cc
@@ -38,7 +38,7 @@ set(LIB_SRC
 set(LIB_LIB
     sylar
     pthread
-    ${YAMLCPP}
+    yaml-cpp
     )
 # 定义一个名为 LIB_SRC 的变量，其中包含了共享库的源文件 sylar/log.cc
 

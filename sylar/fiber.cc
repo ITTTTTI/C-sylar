@@ -129,12 +129,12 @@ void Fiber::reset(std::function<void()>cb){
 
 }
 
-void Fiber::call(){
+void Fiber::call() {
     SetThis(this);
-    m_state=EXEC;
-    if(swapcontext(&t_threadFiber->m_ctx,&m_ctx)){
-            SYLAR_ASSERT2(false,"swapcontext");
-        }
+    m_state = EXEC;
+    if(swapcontext(&t_threadFiber->m_ctx, &m_ctx)) {
+        SYLAR_ASSERT2(false, "swapcontext");
+    }
 }
 
 void Fiber::back(){
@@ -150,7 +150,7 @@ void Fiber::swapIn(){
     SYLAR_ASSERT(m_state!=EXEC);
     m_state=EXEC;
 
-    if(swapcontext(&t_threadFiber->m_ctx,&m_ctx)){
+    if(swapcontext(&Scheduler::GetMainFiber()->m_ctx,&m_ctx)){
         SYLAR_ASSERT2(false,"swapcontext");
     }
     
@@ -158,7 +158,7 @@ void Fiber::swapIn(){
 //切换到后台执行
 void Fiber::swapOut(){
     SetThis(t_threadFiber.get());
-    if(swapcontext(&m_ctx,&t_threadFiber->m_ctx)){
+    if(swapcontext(&m_ctx,&Scheduler::GetMainFiber()->m_ctx)){
         SYLAR_ASSERT2(false,"swapcontext");
     }
     
@@ -182,15 +182,15 @@ Fiber::ptr Fiber::GetThis(){
 //协程切换到后台，状态ready
 void Fiber::YieldToReady(){
     Fiber::ptr cur=GetThis();
-    //SYLAR_ASSERT(cur->m_state == EXEC);
+    SYLAR_ASSERT(cur->m_state == EXEC);
     cur->m_state=READY;
     cur->swapOut();
 }
 //协程切换到后台，状态hold
 void Fiber::YieldToHold(){
     Fiber::ptr cur=GetThis();
-    //SYLAR_ASSERT(cur->m_state == EXEC);
-    cur->m_state=HOLD;
+    SYLAR_ASSERT(cur->m_state == EXEC);
+    //cur->m_state=HOLD;
     cur->swapOut();
 }
 //总协程数
@@ -216,15 +216,15 @@ void Fiber::CallerMainFunc(){
         <<sylar::BacktraceToString();
     }
     catch(...){
+        cur->m_state = EXCEPT;
         SYLAR_LOG_ERROR(g_logger)<<"Fiber Except: ";
 
     }
 
-    auto raw_ptr=cur.get();
+    auto raw_ptr = cur.get();
     cur.reset();
     raw_ptr->back();
-
-    SYLAR_ASSERT2(false,"never reach fiber_id="+std::to_string(raw_ptr->getId()));
+    SYLAR_ASSERT2(false, "never reach fiber_id=" + std::to_string(raw_ptr->getId()));
 
 
 }
@@ -246,6 +246,7 @@ void Fiber::MainFunc(){
         <<sylar::BacktraceToString();
     }
     catch(...){
+        cur->m_state = EXCEPT;
         SYLAR_LOG_ERROR(g_logger)<<"Fiber Except: ";
 
     }

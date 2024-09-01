@@ -21,7 +21,7 @@ Scheduler::Scheduler(size_t threads, bool use_caller, const std::string& name)
         SYLAR_ASSERT(GetThis()==nullptr);
         t_scheduler=this;
 
-        m_rootFiber.reset(new Fiber(std::bind(&Scheduler::run,this),0,true));
+        m_rootFiber.reset(new Fiber(std::bind(&Scheduler::run,this),0,use_caller));
         sylar::Thread::SetName(m_name);
 
         t_scheduler_fiber=m_rootFiber.get();
@@ -73,6 +73,7 @@ void Scheduler::start(){
     // }  
 }
 void Scheduler::stop(){
+
     m_autoStop=true;
     if(m_rootFiber && m_threadCount ==0 
          && (m_rootFiber->getState()==Fiber::State::TERM
@@ -85,7 +86,7 @@ void Scheduler::stop(){
             return;
         }
     }
-
+    
     // bool exit_on_this_fiber = false;
     if (m_rootThread != -1){// 调度器在线程中
         SYLAR_ASSERT(GetThis()==this);
@@ -93,6 +94,7 @@ void Scheduler::stop(){
     }else{
         SYLAR_ASSERT(GetThis()!=this);
     }
+    
     m_stopping=true;
     for(size_t i =0;i<m_threadCount; ++i){
         tickle();
@@ -115,21 +117,19 @@ void Scheduler::stop(){
         // }
         // m_rootFiber->call();
         if(!stopping()){
-            std::cout<<"stopping:"<<stopping()<<std::endl;
             m_rootFiber->call();
         }
     }
-
     std::vector<Thread::ptr> thrs;
     {
         MutexType::Lock lock(m_mutex);
         thrs.swap(m_threads);
     }
-
     for(auto i:thrs){
-        
         i->join();
     }
+
+
     // if(exit_on_this_fiber){
 
     // }
@@ -189,6 +189,7 @@ void Scheduler::run(){
                       &&ft.fiber->getState()!=Fiber::EXCEPT)){
             ft.fiber->swapIn();
             --m_activeThreadCount;
+            SYLAR_LOG_INFO(g_logger)<<ft.fiber->getState();
             if(ft.fiber->getState()==Fiber::READY){
                 schedule(ft.fiber);
             }

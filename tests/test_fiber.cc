@@ -25,11 +25,11 @@ void test_fiber(){
 
 int main(int argc,char** argv){
     std::vector<sylar::Thread::ptr> thrs;
-    for(int i=0;i<3;i++){
+    for(int i=0;i<1;i++){
         thrs.push_back(sylar::Thread::ptr(new sylar::Thread(&test_fiber,"name")));
     }
     for(auto i:thrs){
-        i->join();
+       i->join();
     }
     return 0;
 }

@@ -1,4 +1,9 @@
-/home/flysee/sylar/workspace/sylar/CMakeFiles/sylar.dir
-/home/flysee/sylar/workspace/sylar/CMakeFiles/test.dir
-/home/flysee/sylar/workspace/sylar/CMakeFiles/edit_cache.dir
-/home/flysee/sylar/workspace/sylar/CMakeFiles/rebuild_cache.dir
+/home/liuhx/C-sylar/CMakeFiles/sylar.dir
+/home/liuhx/C-sylar/CMakeFiles/test.dir
+/home/liuhx/C-sylar/CMakeFiles/test_config.dir
+/home/liuhx/C-sylar/CMakeFiles/test_thread.dir
+/home/liuhx/C-sylar/CMakeFiles/test_util.dir
+/home/liuhx/C-sylar/CMakeFiles/test_fiber.dir
+/home/liuhx/C-sylar/CMakeFiles/test_scheduler.dir
+/home/liuhx/C-sylar/CMakeFiles/edit_cache.dir
+/home/liuhx/C-sylar/CMakeFiles/rebuild_cache.dir

@@ -1,4 +1,0 @@
-2024-08-28 22:31:21	[INFO]	hello world
-
-2024-08-28 22:31:21	[INFO]	hello system
-

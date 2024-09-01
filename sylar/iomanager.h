@@ -19,16 +19,17 @@ private:
     struct FdContext{
         typedef Mutex MutexType;
         struct EventContext {
-            Scheduler* scheduler =nu; //事件执行的schduler
+            Scheduler* scheduler =nullptr; //事件执行的schduler
             Fiber::ptr fiber;    //事件协程
             std::function<void()>cb; //事件的回调函数
         };
 
-        int fd;              //文件描述符(事件关联句柄)
+        int fd =0;
+        EventContext& getContext(Event event);              //文件描述符(事件关联句柄)
         EventContext read;   //读事件
         EventContext write;  //写事件
 
-        Event m_events =NONE; //已经注册的事件
+        Event events =NONE; //已经注册的事件
         MutexType mutex;
     };
 public:
@@ -48,8 +49,16 @@ protected:
     bool stopping() override;
     void idle() override;
 
+    void contextResize(size_t size);
+
 private:
-    int m_epfd=0;
+    int m_epfd=0; //epoll的文件描述符
+    int m_tickleFds[2]; //用于epoll_wait的管道文件描述符
     
+    std::atomic<size_t> m_pendingEventCount={0}; //epoll_wait的超时时间
+    RWMutexType m_mutex;  //用于保护m_FdContexts
+    std::vector<FdContext*> m_FdContexts;  //文件描述符对应的上下文
+    
+};
 }
 #endif

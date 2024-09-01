@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/niufx/C-sylar/bin/test_scheduler"
-  "/home/niufx/C-sylar/bin/test_scheduler.pdb"
+  "../bin/test_scheduler"
+  "../bin/test_scheduler.pdb"
   "CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o"
   "CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o.d"
 )

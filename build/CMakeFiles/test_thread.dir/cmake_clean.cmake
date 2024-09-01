@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/niufx/C-sylar/bin/test_thread"
-  "/home/niufx/C-sylar/bin/test_thread.pdb"
+  "../bin/test_thread"
+  "../bin/test_thread.pdb"
   "CMakeFiles/test_thread.dir/tests/test_thread.cc.o"
   "CMakeFiles/test_thread.dir/tests/test_thread.cc.o.d"
 )
