@@ -29,7 +29,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 45,
+				"line" : 46,
 				"parent" : 0
 			},
 			{
@@ -47,8 +47,14 @@
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 46,
+				"line" : 47,
 				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 12,
+				"parent" : 4
 			},
 			{
 				"command" : 3,
@@ -269,6 +275,36 @@
 			[
 				5
 			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 11,
+					"define" : "__FILE__=\"sylar/iomanager.cc\""
+				},
+				{
+					"define" : "sylar_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/home/liuhx/C-sylar/."
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				6
+			]
 		}
 	],
 	"id" : "sylar::@6890427a1f51a3e7e1df",
@@ -306,7 +342,8 @@
 				2,
 				3,
 				4,
-				5
+				5,
+				6
 			]
 		}
 	],
@@ -346,6 +383,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 5,
 			"path" : "sylar/scheduler.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 6,
+			"path" : "sylar/iomanager.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

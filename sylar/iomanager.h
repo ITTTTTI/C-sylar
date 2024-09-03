@@ -26,6 +26,8 @@ private:
 
         int fd =0;
         EventContext& getContext(Event event);              //文件描述符(事件关联句柄)
+        void resetContext(EventContext& ctx);     //重置文件描述符(事件关联句柄)
+        void triggerEvent(Event event); //触发事件
         EventContext read;   //读事件
         EventContext write;  //写事件
 
