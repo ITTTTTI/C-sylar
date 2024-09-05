@@ -192,7 +192,8 @@ CMakeFiles/sylar.dir/sylar/log.cc.o: /home/liuhx/C-sylar/sylar/log.cc \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /usr/include/c++/11/cstdarg \
+ /usr/include/linux/close_range.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/c++/11/cstdarg \
  /home/liuhx/C-sylar/sylar/singleton.h /home/liuhx/C-sylar/sylar/thread.h \
  /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \

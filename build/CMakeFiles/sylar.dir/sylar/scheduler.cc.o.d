@@ -204,7 +204,8 @@ CMakeFiles/sylar.dir/sylar/scheduler.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /usr/include/c++/11/cstdarg \
+ /usr/include/linux/close_range.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/c++/11/cstdarg \
  /home/liuhx/C-sylar/sylar/singleton.h /home/liuhx/C-sylar/sylar/macro.h \
  /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \

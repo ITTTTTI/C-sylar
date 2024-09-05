@@ -7,6 +7,7 @@
 #include <fcntl.h>
 #include <errno.h>
 #include <string.h>
+#include <iostream>
 
 
 namespace sylar
@@ -75,15 +76,22 @@ EPOLLET：将事件设置为边缘触发（Edge Triggered）模式，而不是�
     event.events=EPOLLIN|EPOLLET; //设置监听的事件类型。EPOLLIN 表示监听可读事件，EPOLLET 表示使用边缘触发模式（edge-triggered）
     event.data.fd=m_tickleFds[0]; //将 m_tickleFds[0]（管道的读取端）赋值给 event.data.fd，以便 epoll 可以监控该文件描述符的事件
 
-    rt =fcntl(m_tickleFds[0], F_SETFL,O_NONBLOCK); //fcntl 将 m_tickleFds[0] 设置为非阻塞模式。这样在读取管道时，如果没有数据，程序不会阻塞。
+    rt =fcntl(m_tickleFds[0], F_SETFL,O_NONBLOCK); 
+    //fcntl 是 UNIX 和类 UNIX 系统（包括 Linux）中的一个系统调用，用于操作文件描述符的各种属性。
+    //fcntl 将 m_tickleFds[0] 设置为非阻塞模式。这样在读取管道时，如果没有数据，程序不会阻塞。
+    //将管道的读端设置为非阻塞模式。这样当 m_tickleFds[0] 上没有数据可读时，read 操作不会阻塞，而是直接返回 -1 并设置 errno 为 EAGAIN。
     SYLAR_ASSERT(!rt);
 
-    rt=epoll_ctl(m_epfd,EPOLL_CTL_ADD,m_tickleFds[0],&event); // m_tickleFds[0] 和 event 添加到 epoll 实例中进行监控。EPOLL_CTL_ADD 表示添加新的文件描述符到 epoll
-    SYLAR_ASSERT(rt);
+    rt=epoll_ctl(m_epfd,EPOLL_CTL_ADD,m_tickleFds[0],&event); 
+    // m_tickleFds[0] 和 event 添加到 epoll 实例中进行监控。EPOLL_CTL_ADD 表示添加新的文件描述符到 epoll
+    SYLAR_ASSERT(!rt);
 
     contextResize(32);
 
     start();
+
+    /*在这个代码中，管道 (m_tickleFds) 被用作一种自唤醒机制，
+    即通过在多线程环境中通过向管道写入数据来唤醒正在 epoll_wait() 中阻塞的线程。这样可以有效地通知 epoll，有新的任务或事件需要处理。*/
 
 }
 
@@ -149,7 +157,7 @@ int IOManager::addEvent(int fd, Event event, std::function<void()> cb){
                         <<rt<<" ("<<errno<<") ("<<strerror(errno)<<")";
         return -1;
     }
-
+    
     ++m_pendingEventCount;
     fd_ctx->events=(Event)(fd_ctx->events|event);
     FdContext::EventContext& event_ctx =fd_ctx->getContext(event);
@@ -298,6 +306,7 @@ void IOManager::idle() {
     {
         if(stopping()){
             SYLAR_LOG_INFO(g_logger)<<"name="<<getName()<<" idle";
+            break;
         }
         int rt =0;
         do {
@@ -306,9 +315,7 @@ void IOManager::idle() {
             /*这是一个指向epoll_event结构数组的指针，该数组用于存储epoll_wait函数检测到的事件。
             这是events数组的大小，即最多可以处理的事件数量。这意味着如果有超过64个事件同时就绪,
             那么只有前64个事件会被处理，其余的事件将等待下一次调用epoll_wait时处理。*/
-
             if(rt<0 && errno ==EINTR){
-
             }else{
                 break;
             }
@@ -318,6 +325,8 @@ void IOManager::idle() {
         {
             epoll_event& event =events[i];
             if(event.data.fd==m_tickleFds[0]){
+                //这个条件检查当前事件是否来自管道的读端 m_tickleFds[0]。
+                //因为之前在设置 epoll 时将 m_tickleFds[0] 添加到 epoll 监控中，所以当管道的写端 m_tickleFds[1] 被写入数据时，epoll_wait() 会返回一个对应的事件。
                 uint8_t dummy;
                 while(read(m_tickleFds[0],&dummy,1)==1);
                 continue;
@@ -325,7 +334,8 @@ void IOManager::idle() {
 
             FdContext* fd_ctx= (FdContext*)event.data.ptr;
             FdContext::MutexType::Lock lock(fd_ctx->mutex);
-            if(event.events & (EPOLLERR|EPOLLHUP)){
+            if(event.events & (EPOLLERR|EPOLLHUP)){ //EPOLLERR：表示文件描述符上发生了错误。
+             //EPOLLHUP：表示文件描述符被挂起，通常意味着对端已经关闭连接。
                 event.events |=EPOLLIN|EPOLLOUT;
             }
             int real_events =NONE;
@@ -337,7 +347,7 @@ void IOManager::idle() {
             }
 
 
-            if(fd_ctx->events & real_events){
+            if((fd_ctx->events & real_events) == NONE){
                 continue;
             }
 
@@ -362,12 +372,13 @@ void IOManager::idle() {
                 --m_pendingEventCount;
             }
         }
-    }
-    Fiber::ptr cur =Fiber::GetThis();
-    auto raw_ptr =cur.get();
-    cur.reset();
+        Fiber::ptr cur =Fiber::GetThis();
+        auto raw_ptr =cur.get();
+        cur.reset();
 
-    raw_ptr->swapOut();
+        raw_ptr->swapOut();
+    }
+    
     
 }
 

@@ -733,7 +733,8 @@ CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: \
  /usr/include/x86_64-linux-gnu/sys/syscall.h \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
- /usr/include/x86_64-linux-gnu/bits/syscall.h /usr/include/c++/11/cstdarg \
+ /usr/include/x86_64-linux-gnu/bits/syscall.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/c++/11/cstdarg \
  /home/liuhx/C-sylar/tests/../sylar/singleton.h \
  /home/liuhx/C-sylar/tests/../sylar/thread.h /usr/include/c++/11/thread \
  /usr/include/c++/11/bits/std_thread.h \

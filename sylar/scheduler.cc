@@ -234,6 +234,7 @@ void Scheduler::run(){
             if(idle_fiber->getState()==Fiber::TERM)
             {
                 SYLAR_LOG_INFO(g_logger)<<"idle fiber term";
+                tickle();
                 break;
             }
             ++m_idleThreadCount;

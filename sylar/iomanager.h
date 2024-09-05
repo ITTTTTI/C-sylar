@@ -12,7 +12,7 @@ public:
     enum Event {
         NONE = 0x0,
         READ = 0x1,
-        WRITE = 0x2,
+        WRITE = 0x4,
     };
 
 private:
@@ -57,7 +57,7 @@ private:
     int m_epfd=0; //epoll的文件描述符
     int m_tickleFds[2]; //用于epoll_wait的管道文件描述符
     
-    std::atomic<size_t> m_pendingEventCount={0}; //epoll_wait的超时时间
+    std::atomic<size_t> m_pendingEventCount={0}; //等待的事件数量
     RWMutexType m_mutex;  //用于保护m_FdContexts
     std::vector<FdContext*> m_FdContexts;  //文件描述符对应的上下文
     
