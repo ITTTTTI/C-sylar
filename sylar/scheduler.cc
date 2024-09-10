@@ -1,6 +1,7 @@
 #include "scheduler.h"
 #include "log.h"
 #include "macro.h"
+#include "hook.h"
 #include <iostream>
 namespace sylar{
 static sylar::Logger::ptr g_logger =SYLAR_LOG_NAME("system");
@@ -141,6 +142,7 @@ void Scheduler::setThis(){
 }
 void Scheduler::run(){
     SYLAR_LOG_DEBUG(g_logger) << m_name << " run";
+    sylar::set_hook_enabled(true);
     setThis();
     if(sylar::GetThreadId()!= m_rootThread)
     {

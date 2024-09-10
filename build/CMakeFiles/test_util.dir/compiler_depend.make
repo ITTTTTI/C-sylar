@@ -832,6 +832,7 @@ CMakeFiles/test_util.dir/tests/test_util.cc.o: ../tests/test_util.cc \
   /usr/include/x86_64-linux-gnu/asm/unistd.h \
   /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
   /usr/include/x86_64-linux-gnu/bits/syscall.h \
+  /usr/include/x86_64-linux-gnu/sys/time.h \
   /usr/include/c++/11/cstdarg \
   ../sylar/singleton.h \
   ../sylar/thread.h \
@@ -901,8 +902,12 @@ CMakeFiles/test_util.dir/tests/test_util.cc.o: ../tests/test_util.cc \
   /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
   /usr/include/x86_64-linux-gnu/sys/ucontext.h \
   /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
-  ../sylar/scheduler.h
+  ../sylar/timer.h \
+  ../sylar/scheduler.h \
+  ../sylar/iomanager.h
 
+
+../sylar/timer.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
 
@@ -1260,6 +1265,8 @@ CMakeFiles/test_util.dir/tests/test_util.cc.o: ../tests/test_util.cc \
 
 /usr/include/boost/core/swap.hpp:
 
+/usr/include/x86_64-linux-gnu/sys/time.h:
+
 /usr/include/boost/mpl/aux_/msvc_type.hpp:
 
 /usr/include/boost/integer_traits.hpp:
@@ -1375,6 +1382,8 @@ CMakeFiles/test_util.dir/tests/test_util.cc.o: ../tests/test_util.cc \
 /usr/include/boost/lexical_cast/try_lexical_convert.hpp:
 
 /usr/include/boost/current_function.hpp:
+
+../sylar/iomanager.h:
 
 /usr/include/boost/assert/source_location.hpp:
 

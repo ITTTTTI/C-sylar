@@ -34,7 +34,8 @@ void test_fiber(){
     //用于将点分十进制格式的 IP 地址（IPv4 或 IPv6）转换为网络字节序的二进制形式
 
 
-    if(!connect(sock, (const sockaddr*)&addr,sizeof(addr))){//connect函数是一个用于创建与指定套接字的连接的函数
+    if(!connect(sock, (const sockaddr*)&addr,sizeof(addr))){
+        //connect函数是一个用于创建与指定套接字的连接的函数
 
     }
     else if(errno==EINPROGRESS){
@@ -55,11 +56,25 @@ void test_fiber(){
 void test1(){
     sylar::IOManager iom(2);
     iom.schedule(&test_fiber);
-
-
+}
+sylar::Timer::ptr timer;
+void test_timer(){
+    sylar::IOManager iom(2);
+    timer=iom.addTimer(1000,[](){
+        static int i=0;
+        SYLAR_LOG_INFO(g_logger)<<"hello timer i="<<i;    
+        if(++i==3){
+        //timer->cancel();
+        timer->reset(2000,true);
+        }
+    },true);
+    
 
 }
+
 int main(int argc, char** argv){
-    test1();
+    //test1();
+    //return 0;
+    test_timer();
     return 0;
 }

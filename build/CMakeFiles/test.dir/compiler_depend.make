@@ -241,6 +241,7 @@ CMakeFiles/test.dir/tests/test.cc.o: ../tests/test.cc \
   /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
+  /usr/include/x86_64-linux-gnu/sys/time.h \
   /usr/include/c++/11/cstdarg \
   ../sylar/singleton.h \
   ../sylar/thread.h \
@@ -904,8 +905,12 @@ CMakeFiles/test.dir/tests/test.cc.o: ../tests/test.cc \
   /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
   /usr/include/x86_64-linux-gnu/sys/ucontext.h \
   /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
-  ../sylar/scheduler.h
+  ../sylar/timer.h \
+  ../sylar/scheduler.h \
+  ../sylar/iomanager.h
 
+
+../sylar/timer.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
 
@@ -1201,10 +1206,6 @@ CMakeFiles/test.dir/tests/test.cc.o: ../tests/test.cc \
 
 /usr/include/boost/core/swap.hpp:
 
-/usr/include/boost/mpl/aux_/msvc_type.hpp:
-
-/usr/include/boost/integer_traits.hpp:
-
 /usr/include/boost/type_traits/has_left_shift.hpp:
 
 /usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_long_long.hpp:
@@ -1313,6 +1314,8 @@ CMakeFiles/test.dir/tests/test.cc.o: ../tests/test.cc \
 
 /usr/include/boost/current_function.hpp:
 
+../sylar/iomanager.h:
+
 /usr/include/boost/assert/source_location.hpp:
 
 /usr/include/boost/throw_exception.hpp:
@@ -1404,6 +1407,12 @@ CMakeFiles/test.dir/tests/test.cc.o: ../tests/test.cc \
 /usr/include/boost/preprocessor/logical/not.hpp:
 
 /usr/include/c++/11/bits/std_thread.h:
+
+/usr/include/boost/mpl/aux_/msvc_type.hpp:
+
+/usr/include/boost/integer_traits.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/time.h:
 
 /usr/include/boost/numeric/conversion/int_float_mixture_enum.hpp:
 
@@ -1791,12 +1800,6 @@ CMakeFiles/test.dir/tests/test.cc.o: ../tests/test.cc \
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
-../sylar/sylar.h:
-
-/usr/include/c++/11/new:
-
-/usr/include/c++/11/climits:
-
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/boost/range/detail/misc_concept.hpp:
@@ -1904,10 +1907,6 @@ CMakeFiles/test.dir/tests/test.cc.o: ../tests/test.cc \
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
 /usr/include/boost/mpl/aux_/config/use_preprocessed.hpp:
-
-/usr/include/c++/11/bits/sstream.tcc:
-
-/usr/include/boost/mpl/aux_/value_wknd.hpp:
 
 /usr/include/x86_64-linux-gnu/sys/syscall.h:
 
@@ -2022,6 +2021,16 @@ CMakeFiles/test.dir/tests/test.cc.o: ../tests/test.cc \
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/boost/type_traits/add_rvalue_reference.hpp:
+
+/usr/include/c++/11/new:
+
+/usr/include/boost/mpl/aux_/value_wknd.hpp:
+
+/usr/include/c++/11/bits/sstream.tcc:
+
+../sylar/sylar.h:
+
+/usr/include/c++/11/climits:
 
 /usr/include/c++/11/bits/ostream.tcc:
 

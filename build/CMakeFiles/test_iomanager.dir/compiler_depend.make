@@ -832,6 +832,7 @@ CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: ../tests/test_iomanager
   /usr/include/x86_64-linux-gnu/asm/unistd.h \
   /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
   /usr/include/x86_64-linux-gnu/bits/syscall.h \
+  /usr/include/x86_64-linux-gnu/sys/time.h \
   /usr/include/c++/11/cstdarg \
   ../sylar/singleton.h \
   ../sylar/thread.h \
@@ -901,7 +902,9 @@ CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: ../tests/test_iomanager
   /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
   /usr/include/x86_64-linux-gnu/sys/ucontext.h \
   /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
+  ../sylar/timer.h \
   ../sylar/scheduler.h \
+  ../sylar/iomanager.h \
   ../sylar/iomanager.h \
   /usr/include/x86_64-linux-gnu/sys/socket.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -954,6 +957,8 @@ CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: ../tests/test_iomanager
 /usr/include/linux/stddef.h:
 
 /usr/include/linux/posix_types.h:
+
+../sylar/timer.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
 
@@ -1316,6 +1321,8 @@ CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: ../tests/test_iomanager
 /usr/include/boost/container/container_fwd.hpp:
 
 /usr/include/boost/core/swap.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/time.h:
 
 /usr/include/boost/mpl/aux_/msvc_type.hpp:
 

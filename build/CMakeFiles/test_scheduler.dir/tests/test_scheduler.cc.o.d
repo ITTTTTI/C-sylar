@@ -793,5 +793,7 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
+ /home/liuhx/C-sylar/tests/../sylar/timer.h \
  /home/liuhx/C-sylar/tests/../sylar/scheduler.h \
+ /home/liuhx/C-sylar/tests/../sylar/iomanager.h \
  /usr/include/c++/11/iostream

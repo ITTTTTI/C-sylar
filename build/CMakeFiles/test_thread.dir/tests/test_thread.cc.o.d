@@ -791,4 +791,6 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
- /home/liuhx/C-sylar/./sylar/scheduler.h
+ /home/liuhx/C-sylar/./sylar/timer.h \
+ /home/liuhx/C-sylar/./sylar/scheduler.h \
+ /home/liuhx/C-sylar/./sylar/iomanager.h

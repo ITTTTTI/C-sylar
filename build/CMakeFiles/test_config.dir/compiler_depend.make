@@ -831,6 +831,7 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: ../tests/test_config.cc \
   /usr/include/x86_64-linux-gnu/asm/unistd.h \
   /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
   /usr/include/x86_64-linux-gnu/bits/syscall.h \
+  /usr/include/x86_64-linux-gnu/sys/time.h \
   /usr/include/c++/11/cstdarg \
   ../sylar/singleton.h \
   ../sylar/thread.h \
@@ -1247,6 +1248,8 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: ../tests/test_config.cc \
 /usr/include/boost/container/container_fwd.hpp:
 
 /usr/include/boost/core/swap.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/time.h:
 
 /usr/include/boost/mpl/aux_/msvc_type.hpp:
 
