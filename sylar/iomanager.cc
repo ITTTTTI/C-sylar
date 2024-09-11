@@ -147,7 +147,7 @@ int IOManager::addEvent(int fd, Event event, std::function<void()> cb){
 
     int op= fd_ctx->events ? EPOLL_CTL_MOD :EPOLL_CTL_ADD;
     epoll_event epevent;
-    epevent.events= EPOLLET|fd_ctx->events|event;
+    epevent.events= EPOLLET|fd_ctx->events|event;//边缘触发模式。
     epevent.data.ptr=fd_ctx;
 
     int rt=epoll_ctl(m_epfd,op,fd,&epevent);

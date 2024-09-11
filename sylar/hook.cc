@@ -1,10 +1,16 @@
 #include "hook.h"
 #include "sylar.h"
+
+#include "log.h"
 #include <iostream>
 #include <dlfcn.h>
+#include "fd_manager.h"
+#include <functional>
 /*并详细展示了如何通过钩子机制拦截系统调用（如 sleep 和 usleep），
 并将这些调用挂接到一个基于协程（或称为“纤程”）的系统上*/
 namespace sylar{
+
+sylar::Logger::ptr g_logger = SYLAR_LOG_ROOT();    
 
 static thread_local bool t_hook_enable =false;
 
@@ -66,10 +72,95 @@ void set_hook_enabled(bool flag){
 }
 }
 
+
+
+
+
+
+
+
 extern "C"{
 #define XX(name) name ## _fun name ## _f =nullptr;
        HOOK_FUN(XX);
 #undef XX
+
+struct timer_info{
+    int canncelled =0;
+};
+
+template<typename OriginFun, typename ... Args>
+static ssize_t do_io(int fd,OriginFun fun, const char* hook_fun_name,
+    uint32_t event, int timeout_so, Args&&... args){
+        if(!sylar::t_hook_enable){
+            return fun(fd,std::forward<Args>(args)...)
+        }
+
+        sylar::FdCtx::ptr ctx=sylar::FdMgr::GetInstance()->get(fd);
+        if(!ctx){
+            return fun(fd,std::forward<Args>(args)...);
+        }
+
+        if(ctx->isClosed()){
+            errno =EBADF;
+            return -1;
+        }
+
+        if(!ctx->isSocket()|| ctx->getUserNonblock()){
+            return fun(fd,std::forward<Args>(args)...);
+        }
+
+        uint64_t to = ctx->getTimeout(timeout_so);
+        std::shared_ptr<timer_info> tinfo(new timer_info);
+retry:
+
+        ssize_t n = fun(fd,std::forward<Args>(args)...);
+
+        while(n==-1 && errno ==EINTR){
+            n= fun(fd,std::forward<Args>(args)...);
+        }
+        if(n==-1&&errno ==EAGAIN){
+            sylar::IOManager* iom = sylar::IOManager::GetThis();
+            sylar::Timer::ptr timer;
+            std::weak_ptr<timer_info> winfo(tinfo);
+
+            if(to!=(uint64_t)-1){
+                timer =iom->addConditionTimer(to,[winfo,fd,iom,event](){
+                    auto t=winfo.lock();
+                    if(!t||t->cancelled)
+                    {
+                        return;
+                    }
+                    t->cancelled =ETIMEOUT;
+                    iom->cancelEvent(fd,(sylar::IOManager::Event)(event));
+                },winfo);
+            }
+            uint64_t now =0;
+
+            int rt = iom->addEvent(fd,(sylar::IOManger::Event)(event));
+            if(rt){
+
+                    SYLAR_LOG_ERROR(g_logger)<<hook_fun_name<<"addEvent(" 
+                    <<fd <<','<<event<<")";
+                if(timer){
+                    timer->cancel();
+                }
+                return -1;
+            }else {
+                sylar::Fiber::YieldToHold();
+                if(timer){
+                    timer->cancel();
+                }
+                if(tinfo->cancelled){
+                    errno=tinfo->cancelled;
+                    return -1;
+                }
+
+                goto retry;
+            }
+
+        }
+        return n;
+}
 /*这里为 sleep 和 usleep 函数指针声明了全局变量，并将其初始值设为 nullptr。
 使用宏展开后，这部分等价于 sleep_fun sleep_f = nullptr;
 usleep_fun usleep_f = nullptr;*/
