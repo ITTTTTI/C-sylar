@@ -11,11 +11,11 @@ namespace sylar{
 class FdCtx: public std::enable_shared_from_this<FdCtx> {
 public:
     typedef std::shared_ptr<FdCtx> ptr;
-    FdCtx(int fd);
+    FdCtx(int fd); //构造函数，初始化文件描述符 fd。
     ~FdCtx();
     
-    bool init();
-    bool isInit() const{return m_isInit;}
+    bool init();//初始化函数，用于初始化文件描述符相关的设置
+    bool isInit() const{return m_isInit;} //判断该文件描述符是否已初始化
     bool isSocket()const{return m_isSocket;}
     bool isClosed() const{return m_isClosed;}
     bool close();
@@ -41,6 +41,8 @@ private:
     sylar::IOManager* m_iomanager;  
 };
 
+//FdManager 类用于管理多个 FdCtx 实例，
+//通过文件描述符索引 FdCtx 的上下文对象，常用于高并发场景下管理大量文件描述符。
 class FdManager{
 public:
     typedef RWMutex RWMutexType;

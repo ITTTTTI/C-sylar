@@ -32,9 +32,10 @@ void test_fiber(){
     addr.sin_port=htons(80);
     inet_pton(AF_INET,"110.242.68.66", &addr.sin_addr.s_addr);
     //用于将点分十进制格式的 IP 地址（IPv4 或 IPv6）转换为网络字节序的二进制形式
-
+    
 
     if(!connect(sock, (const sockaddr*)&addr,sizeof(addr))){
+        
         //connect函数是一个用于创建与指定套接字的连接的函数
 
     }

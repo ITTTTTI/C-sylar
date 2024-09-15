@@ -794,6 +794,7 @@ CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: \
  /home/liuhx/C-sylar/./sylar/timer.h \
  /home/liuhx/C-sylar/./sylar/scheduler.h \
  /home/liuhx/C-sylar/./sylar/iomanager.h \
+ /home/liuhx/C-sylar/./sylar/fd_manager.h \
  /home/liuhx/C-sylar/./sylar/iomanager.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \

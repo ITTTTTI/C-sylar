@@ -825,4 +825,7 @@ CMakeFiles/test_hook.dir/tests/test_hook.cc.o: \
  /home/liuhx/C-sylar/./sylar/timer.h \
  /home/liuhx/C-sylar/./sylar/scheduler.h \
  /home/liuhx/C-sylar/./sylar/iomanager.h \
- /home/liuhx/C-sylar/./sylar/iomanager.h
+ /home/liuhx/C-sylar/./sylar/fd_manager.h \
+ /home/liuhx/C-sylar/./sylar/fd_manager.h \
+ /home/liuhx/C-sylar/./sylar/iomanager.h /usr/include/arpa/inet.h \
+ /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/bits/in.h

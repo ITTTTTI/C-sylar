@@ -2,6 +2,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
+#include <vector>
 #include "hook.h"
 
 
@@ -78,7 +79,7 @@ FdManager::FdManager(){
 }
 FdCtx::ptr FdManager::get(int fd ,bool auto_create){
     RWMutexType::ReadLock lock(m_mutex);
-    if(m_datas.size()<=fd)
+    if((int)m_datas.size()<=fd)
     {
         if(!auto_create)
         {
@@ -101,7 +102,7 @@ FdCtx::ptr FdManager::get(int fd ,bool auto_create){
 }
 void FdManager::del(int fd){
     RWMutexType::WriteLock lock(m_mutex);
-    if(m_datas.size()<=fd){
+    if((int)m_datas.size()<=fd){
         return;
     }
     m_datas[fd].reset();

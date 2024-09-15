@@ -263,7 +263,7 @@ bool Scheduler::stopping(){
     
 }
 void Scheduler::idle(){
-    SYLAR_LOG_INFO(g_logger)<<"idle";
+    SYLAR_LOG_INFO(g_logger)<<"scheduler_idle";
     while(!stopping()){
         sylar::Fiber::YieldToHold();
     }

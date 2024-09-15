@@ -6,6 +6,11 @@
 },
 {
   "directory": "/home/liuhx/C-sylar/build",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/fd_manager.cc\\\" -I/home/liuhx/C-sylar/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/sylar.dir/sylar/fd_manager.cc.o -c /home/liuhx/C-sylar/sylar/fd_manager.cc",
+  "file": "/home/liuhx/C-sylar/sylar/fd_manager.cc"
+},
+{
+  "directory": "/home/liuhx/C-sylar/build",
   "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/fiber.cc\\\" -I/home/liuhx/C-sylar/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/sylar.dir/sylar/fiber.cc.o -c /home/liuhx/C-sylar/sylar/fiber.cc",
   "file": "/home/liuhx/C-sylar/sylar/fiber.cc"
 },

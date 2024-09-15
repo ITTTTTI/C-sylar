@@ -7,7 +7,6 @@
 #include <unistd.h>
 #include <time.h>
 #include <fcntl.h>
-#include <sys/ioctl.h>
 /*函数钩子是一种技术，通过它可以拦截或替换系统函数调用，
 使得我们可以在调用系统函数之前或之后执行一些自定义的操作。*/
 namespace sylar
@@ -40,7 +39,7 @@ extern socket_fun socket_f;
 typedef int (*connect_fun)(int sockfd, const struct sockaddr *addr,socklen_t addrlen);
 extern connect_fun connect_f;
 
-typedef int (*accept_fun)(int s, struct sockaddr *addr,socklen_t addrlen);
+typedef int (*accept_fun)(int s, struct sockaddr *addr, socklen_t *addrlen);
 extern accept_fun accept_f;
 
 //read
@@ -62,7 +61,7 @@ typedef ssize_t (*recvmsg_fun)(int sockfd, struct msghdr *msg, int flags);
 extern recvmsg_fun recvmsg_f;
 
 //write
-typedef ssize_t (*write_fun)(int fd, void *buf, size_t count);
+typedef ssize_t (*write_fun)(int fd, const void *buf, size_t count);
 extern  write_fun write_f;
 
 typedef ssize_t (*writev_fun)(int fd, const struct iovec *iov, int iovcnt);

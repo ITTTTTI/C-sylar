@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/liuhx/C-sylar/sylar/config.cc" "CMakeFiles/sylar.dir/sylar/config.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/config.cc.o.d"
+  "/home/liuhx/C-sylar/sylar/fd_manager.cc" "CMakeFiles/sylar.dir/sylar/fd_manager.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/fd_manager.cc.o.d"
   "/home/liuhx/C-sylar/sylar/fiber.cc" "CMakeFiles/sylar.dir/sylar/fiber.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/fiber.cc.o.d"
   "/home/liuhx/C-sylar/sylar/hook.cc" "CMakeFiles/sylar.dir/sylar/hook.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/hook.cc.o.d"
   "/home/liuhx/C-sylar/sylar/iomanager.cc" "CMakeFiles/sylar.dir/sylar/iomanager.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/iomanager.cc.o.d"

@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/liuhx/C-sylar/bin/test_config"
+			"path" : "/home/liuhx/C-sylar/bin/test_timu"
 		}
 	],
 	"backtrace" : 1,
@@ -31,7 +31,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 59,
+				"line" : 96,
 				"parent" : 0
 			},
 			{
@@ -43,13 +43,13 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 62,
+				"line" : 99,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 61,
+				"line" : 98,
 				"parent" : 0
 			},
 			{
@@ -61,7 +61,7 @@
 			{
 				"command" : 6,
 				"file" : 0,
-				"line" : 60,
+				"line" : 97,
 				"parent" : 0
 			},
 			{
@@ -85,7 +85,7 @@
 			[
 				{
 					"backtrace" : 7,
-					"define" : "__FILE__=\"tests/test_config.cc\""
+					"define" : "__FILE__=\"tests/test_timu.cc\""
 				}
 			],
 			"includes" : 
@@ -109,7 +109,7 @@
 			"id" : "sylar::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "test_config::@6890427a1f51a3e7e1df",
+	"id" : "test_timu::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -154,8 +154,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "test_config",
-	"nameOnDisk" : "test_config",
+	"name" : "test_timu",
+	"nameOnDisk" : "test_timu",
 	"paths" : 
 	{
 		"build" : ".",
@@ -176,7 +176,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "tests/test_config.cc",
+			"path" : "tests/test_timu.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

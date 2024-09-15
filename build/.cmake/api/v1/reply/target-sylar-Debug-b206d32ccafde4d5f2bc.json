@@ -29,7 +29,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 49,
+				"line" : 50,
 				"parent" : 0
 			},
 			{
@@ -47,8 +47,14 @@
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 51,
+				"line" : 52,
 				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 12,
+				"parent" : 4
 			},
 			{
 				"command" : 3,
@@ -149,7 +155,7 @@
 			[
 				{
 					"backtrace" : 6,
-					"define" : "__FILE__=\"sylar/fiber.cc\""
+					"define" : "__FILE__=\"sylar/fd_manager.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -179,7 +185,7 @@
 			[
 				{
 					"backtrace" : 7,
-					"define" : "__FILE__=\"sylar/util.cc\""
+					"define" : "__FILE__=\"sylar/fiber.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -209,7 +215,7 @@
 			[
 				{
 					"backtrace" : 8,
-					"define" : "__FILE__=\"sylar/config.cc\""
+					"define" : "__FILE__=\"sylar/util.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -239,7 +245,7 @@
 			[
 				{
 					"backtrace" : 9,
-					"define" : "__FILE__=\"sylar/thread.cc\""
+					"define" : "__FILE__=\"sylar/config.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -269,7 +275,7 @@
 			[
 				{
 					"backtrace" : 10,
-					"define" : "__FILE__=\"sylar/scheduler.cc\""
+					"define" : "__FILE__=\"sylar/thread.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -299,7 +305,7 @@
 			[
 				{
 					"backtrace" : 11,
-					"define" : "__FILE__=\"sylar/iomanager.cc\""
+					"define" : "__FILE__=\"sylar/scheduler.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -329,7 +335,7 @@
 			[
 				{
 					"backtrace" : 12,
-					"define" : "__FILE__=\"sylar/timer.cc\""
+					"define" : "__FILE__=\"sylar/iomanager.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -359,7 +365,7 @@
 			[
 				{
 					"backtrace" : 13,
-					"define" : "__FILE__=\"sylar/hook.cc\""
+					"define" : "__FILE__=\"sylar/timer.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -376,6 +382,36 @@
 			"sourceIndexes" : 
 			[
 				8
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 14,
+					"define" : "__FILE__=\"sylar/hook.cc\""
+				},
+				{
+					"define" : "sylar_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/home/liuhx/C-sylar/."
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				9
 			]
 		}
 	],
@@ -417,7 +453,8 @@
 				5,
 				6,
 				7,
-				8
+				8,
+				9
 			]
 		}
 	],
@@ -432,48 +469,54 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 1,
-			"path" : "sylar/fiber.cc",
+			"path" : "sylar/fd_manager.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 2,
-			"path" : "sylar/util.cc",
+			"path" : "sylar/fiber.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 3,
-			"path" : "sylar/config.cc",
+			"path" : "sylar/util.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 4,
-			"path" : "sylar/thread.cc",
+			"path" : "sylar/config.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 5,
-			"path" : "sylar/scheduler.cc",
+			"path" : "sylar/thread.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 6,
-			"path" : "sylar/iomanager.cc",
+			"path" : "sylar/scheduler.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 7,
-			"path" : "sylar/timer.cc",
+			"path" : "sylar/iomanager.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 8,
+			"path" : "sylar/timer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 9,
 			"path" : "sylar/hook.cc",
 			"sourceGroupIndex" : 0
 		}

@@ -308,8 +308,10 @@ bool IOManager::stopping() {
 };
 
 void IOManager::idle() {
+    SYLAR_LOG_INFO(g_logger)<<"iomanager_idle";
     epoll_event* events = new epoll_event[64];
     std::shared_ptr<epoll_event> shared_envents(events,[](epoll_event* ptr){delete[] ptr;});
+    //在多线程程序中，每个线程使用独立的 epoll_event 数组是安全的，不会导致冲突。确保每个线程分配和管理自己的事件数组
     while(true)
     {
         uint64_t next_timeout=0;

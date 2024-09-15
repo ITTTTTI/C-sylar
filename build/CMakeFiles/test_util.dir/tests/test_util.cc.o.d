@@ -795,4 +795,5 @@ CMakeFiles/test_util.dir/tests/test_util.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
  /home/liuhx/C-sylar/tests/../sylar/timer.h \
  /home/liuhx/C-sylar/tests/../sylar/scheduler.h \
- /home/liuhx/C-sylar/tests/../sylar/iomanager.h
+ /home/liuhx/C-sylar/tests/../sylar/iomanager.h \
+ /home/liuhx/C-sylar/tests/../sylar/fd_manager.h
