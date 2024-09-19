@@ -201,8 +201,8 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: /home/liuhx/C-sylar/sylar/util.cc \
  /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
  /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /usr/include/c++/11/atomic /home/liuhx/C-sylar/sylar/fiber.h \
- /usr/include/ucontext.h \
+ /usr/include/c++/11/atomic /home/liuhx/C-sylar/sylar/noncopyable.h \
+ /home/liuhx/C-sylar/sylar/fiber.h /usr/include/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h

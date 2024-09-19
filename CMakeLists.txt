@@ -37,6 +37,7 @@ set(LIB_SRC
     sylar/iomanager.cc
     sylar/timer.cc
     sylar/hook.cc
+    sylar/address.cc
     )
 
 set(LIB_LIB
@@ -98,6 +99,10 @@ force_redefine_file_macro_for_sources(test_timu)
 add_dependencies(test_timu sylar)  #指定 test 可执行文件依赖于 sylar 库。确保在构建 test 之前先构建 sylar 库。
 target_link_libraries(test_timu ${LIB_LIB})
 
+add_executable(test_address tests/test_address.cc)  #创建一个名为 test 的可执行文件，源文件是 tests/test.cc
+force_redefine_file_macro_for_sources(test_address)
+add_dependencies(test_address sylar)  #指定 test 可执行文件依赖于 sylar 库。确保在构建 test 之前先构建 sylar 库。
+target_link_libraries(test_address ${LIB_LIB})
 
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin) #可执行文件的输出路径

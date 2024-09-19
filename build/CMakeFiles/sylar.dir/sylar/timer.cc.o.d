@@ -156,8 +156,8 @@ CMakeFiles/sylar.dir/sylar/timer.cc.o: /home/liuhx/C-sylar/sylar/timer.cc \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc /usr/include/semaphore.h \
  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /usr/include/c++/11/atomic /usr/include/c++/11/vector \
- /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/atomic /home/liuhx/C-sylar/sylar/noncopyable.h \
+ /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/set \
  /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_set.h \
@@ -795,4 +795,24 @@ CMakeFiles/sylar.dir/sylar/timer.cc.o: /home/liuhx/C-sylar/sylar/timer.cc \
  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
  /home/liuhx/C-sylar/sylar/scheduler.h \
  /home/liuhx/C-sylar/sylar/iomanager.h \
- /home/liuhx/C-sylar/sylar/fd_manager.h
+ /home/liuhx/C-sylar/sylar/fd_manager.h \
+ /home/liuhx/C-sylar/sylar/address.h \
+ /usr/include/x86_64-linux-gnu/sys/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/x86_64-linux-gnu/bits/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/socket_type.h \
+ /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+ /usr/include/x86_64-linux-gnu/asm/socket.h \
+ /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h \
+ /usr/include/x86_64-linux-gnu/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
+ /usr/include/x86_64-linux-gnu/bits/socket2.h \
+ /usr/include/x86_64-linux-gnu/sys/un.h /usr/include/c++/11/iostream \
+ /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/bits/in.h

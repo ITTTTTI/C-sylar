@@ -201,9 +201,10 @@ CMakeFiles/sylar.dir/sylar/log.cc.o: /home/liuhx/C-sylar/sylar/log.cc \
  /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
  /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /usr/include/c++/11/atomic /usr/include/c++/11/iostream \
- /home/liuhx/C-sylar/sylar/config.h /usr/include/boost/lexical_cast.hpp \
- /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
+ /usr/include/c++/11/atomic /home/liuhx/C-sylar/sylar/noncopyable.h \
+ /usr/include/c++/11/iostream /home/liuhx/C-sylar/sylar/config.h \
+ /usr/include/boost/lexical_cast.hpp /usr/include/boost/config.hpp \
+ /usr/include/boost/config/user.hpp \
  /usr/include/boost/config/detail/select_compiler_config.hpp \
  /usr/include/boost/config/compiler/gcc.hpp /usr/include/c++/11/cstddef \
  /usr/include/boost/config/detail/select_stdlib_config.hpp \

@@ -29,7 +29,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 50,
+				"line" : 51,
 				"parent" : 0
 			},
 			{
@@ -47,8 +47,14 @@
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 52,
+				"line" : 53,
 				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 12,
+				"parent" : 4
 			},
 			{
 				"command" : 3,
@@ -413,6 +419,36 @@
 			[
 				9
 			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 15,
+					"define" : "__FILE__=\"sylar/address.cc\""
+				},
+				{
+					"define" : "sylar_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/home/liuhx/C-sylar/."
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				10
+			]
 		}
 	],
 	"id" : "sylar::@6890427a1f51a3e7e1df",
@@ -454,7 +490,8 @@
 				6,
 				7,
 				8,
-				9
+				9,
+				10
 			]
 		}
 	],
@@ -518,6 +555,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 9,
 			"path" : "sylar/hook.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 10,
+			"path" : "sylar/address.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

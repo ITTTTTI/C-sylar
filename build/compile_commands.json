@@ -51,6 +51,11 @@
 },
 {
   "directory": "/home/liuhx/C-sylar/build",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/address.cc\\\" -I/home/liuhx/C-sylar/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/sylar.dir/sylar/address.cc.o -c /home/liuhx/C-sylar/sylar/address.cc",
+  "file": "/home/liuhx/C-sylar/sylar/address.cc"
+},
+{
+  "directory": "/home/liuhx/C-sylar/build",
   "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test.cc\\\" -I/home/liuhx/C-sylar/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -o CMakeFiles/test.dir/tests/test.cc.o -c /home/liuhx/C-sylar/tests/test.cc",
   "file": "/home/liuhx/C-sylar/tests/test.cc"
 },
@@ -93,5 +98,10 @@
   "directory": "/home/liuhx/C-sylar/build",
   "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test_timu.cc\\\" -I/home/liuhx/C-sylar/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -o CMakeFiles/test_timu.dir/tests/test_timu.cc.o -c /home/liuhx/C-sylar/tests/test_timu.cc",
   "file": "/home/liuhx/C-sylar/tests/test_timu.cc"
+},
+{
+  "directory": "/home/liuhx/C-sylar/build",
+  "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test_address.cc\\\" -I/home/liuhx/C-sylar/.  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -o CMakeFiles/test_address.dir/tests/test_address.cc.o -c /home/liuhx/C-sylar/tests/test_address.cc",
+  "file": "/home/liuhx/C-sylar/tests/test_address.cc"
 }
 ]

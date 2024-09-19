@@ -157,7 +157,8 @@ CMakeFiles/sylar.dir/sylar/fd_manager.cc.o: \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc /usr/include/semaphore.h \
  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /usr/include/c++/11/atomic /home/liuhx/C-sylar/sylar/iomanager.h \
+ /usr/include/c++/11/atomic /home/liuhx/C-sylar/sylar/noncopyable.h \
+ /home/liuhx/C-sylar/sylar/iomanager.h \
  /home/liuhx/C-sylar/sylar/scheduler.h /home/liuhx/C-sylar/sylar/fiber.h \
  /usr/include/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \

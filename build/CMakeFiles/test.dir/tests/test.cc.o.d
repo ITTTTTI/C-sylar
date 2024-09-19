@@ -201,7 +201,9 @@ CMakeFiles/test.dir/tests/test.cc.o: /home/liuhx/C-sylar/tests/test.cc \
  /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
  /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /usr/include/c++/11/atomic /home/liuhx/C-sylar/tests/../sylar/util.h \
+ /usr/include/c++/11/atomic \
+ /home/liuhx/C-sylar/tests/../sylar/noncopyable.h \
+ /home/liuhx/C-sylar/tests/../sylar/util.h \
  /home/liuhx/C-sylar/tests/../sylar/sylar.h \
  /home/liuhx/C-sylar/tests/../sylar/config.h \
  /usr/include/boost/lexical_cast.hpp /usr/include/boost/config.hpp \
@@ -798,4 +800,24 @@ CMakeFiles/test.dir/tests/test.cc.o: /home/liuhx/C-sylar/tests/test.cc \
  /home/liuhx/C-sylar/tests/../sylar/timer.h \
  /home/liuhx/C-sylar/tests/../sylar/scheduler.h \
  /home/liuhx/C-sylar/tests/../sylar/iomanager.h \
- /home/liuhx/C-sylar/tests/../sylar/fd_manager.h
+ /home/liuhx/C-sylar/tests/../sylar/fd_manager.h \
+ /home/liuhx/C-sylar/tests/../sylar/address.h \
+ /usr/include/x86_64-linux-gnu/sys/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/x86_64-linux-gnu/bits/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/socket_type.h \
+ /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+ /usr/include/x86_64-linux-gnu/asm/socket.h \
+ /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h \
+ /usr/include/x86_64-linux-gnu/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
+ /usr/include/x86_64-linux-gnu/bits/socket2.h \
+ /usr/include/x86_64-linux-gnu/sys/un.h /usr/include/netinet/in.h \
+ /usr/include/x86_64-linux-gnu/bits/in.h

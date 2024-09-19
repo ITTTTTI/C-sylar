@@ -8,5 +8,6 @@
 /home/liuhx/C-sylar/build/CMakeFiles/test_iomanager.dir
 /home/liuhx/C-sylar/build/CMakeFiles/test_hook.dir
 /home/liuhx/C-sylar/build/CMakeFiles/test_timu.dir
+/home/liuhx/C-sylar/build/CMakeFiles/test_address.dir
 /home/liuhx/C-sylar/build/CMakeFiles/edit_cache.dir
 /home/liuhx/C-sylar/build/CMakeFiles/rebuild_cache.dir
